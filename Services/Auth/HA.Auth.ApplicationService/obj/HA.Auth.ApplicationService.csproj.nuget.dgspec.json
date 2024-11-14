@@ -1,0 +1,454 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj",
+        "projectName": "HA.Auth.ApplicationService",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dung0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Dtos\\HA.Auth.Dtos.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Dtos\\HA.Auth.Dtos.csproj"
+              },
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj"
+              },
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj"
+              },
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj",
+        "projectName": "HA.Auth.Domain",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj",
+        "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dung0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Dtos\\HA.Auth.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Dtos\\HA.Auth.Dtos.csproj",
+        "projectName": "HA.Auth.Dtos",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Dtos\\HA.Auth.Dtos.csproj",
+        "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dung0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj",
+        "projectName": "HA.Auth.Infrastructure",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dung0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj",
+        "projectName": "HA.Auth.Constan",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj",
+        "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dung0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj",
+        "projectName": "HA.Shared.ApplicationService",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dung0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

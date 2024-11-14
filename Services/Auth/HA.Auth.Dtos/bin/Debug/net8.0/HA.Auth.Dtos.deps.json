@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HA.Auth.Dtos/1.0.0": {
+        "runtime": {
+          "HA.Auth.Dtos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HA.Auth.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

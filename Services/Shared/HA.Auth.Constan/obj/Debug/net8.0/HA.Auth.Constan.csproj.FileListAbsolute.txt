@@ -1,0 +1,11 @@
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\bin\Debug\net8.0\HA.Auth.Constan.deps.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\bin\Debug\net8.0\HA.Auth.Constan.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\bin\Debug\net8.0\HA.Auth.Constan.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\HA.Auth.Constan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\HA.Auth.Constan.AssemblyInfoInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\HA.Auth.Constan.AssemblyInfo.cs
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\HA.Auth.Constan.csproj.CoreCompileInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\HA.Auth.Constan.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\refint\HA.Auth.Constan.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\HA.Auth.Constan.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Auth.Constan\obj\Debug\net8.0\ref\HA.Auth.Constan.dll
