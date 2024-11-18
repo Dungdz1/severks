@@ -9,3 +9,4 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Dtos\obj\De
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Dtos\obj\Debug\net8.0\refint\HA.Auth.Dtos.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Dtos\obj\Debug\net8.0\HA.Auth.Dtos.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Dtos\obj\Debug\net8.0\ref\HA.Auth.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Dtos\obj\Debug\net8.0\HA.Auth.Dtos.sourcelink.json

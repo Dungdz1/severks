@@ -1,12 +1,7 @@
-﻿using HA.Auth.ApplicationService.UserModule.Implements;
+﻿using HA.Auth.ApplicationService.UserModule.Abstract;
 using HA.Auth.Dtos.Logg;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace HA.WebAPI.Controllers.Auth
 {
@@ -14,26 +9,18 @@ namespace HA.WebAPI.Controllers.Auth
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly CheckUser _checkUser;
+        private readonly IUserService _userService;
 
-        public AuthController(CheckUser checkUser)
+        public AuthController(IUserService userService)
         {
-            _checkUser = checkUser;
+            _userService = userService;
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginDto loginDto)
+        public async Task<IActionResult> Login(LoginDto input)
         {
-            try
-            {
-                var token = _checkUser.AuthenticateUser(loginDto.UserName, loginDto.Password);
-                return Ok(new { Token = token });
-            }
-            catch (Exception ex)
-            {
-                return Unauthorized(new { message = ex.Message });
-            }
+            var response = await _userService.LoginAsync(input);
+            return Ok(response);
         }
-
     }
 }

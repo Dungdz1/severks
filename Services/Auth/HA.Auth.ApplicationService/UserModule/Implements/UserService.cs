@@ -1,14 +1,19 @@
 ﻿using HA.Auth.ApplicationService.Common;
 using HA.Auth.ApplicationService.UserModule.Abstract;
 using HA.Auth.Domain;
+using HA.Auth.Dtos.Logg;
 using HA.Auth.Dtos.UserModule;
 using HA.Auth.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Net;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,10 +23,12 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
     {
         private readonly ILogger<UserService> _logger;
         private readonly AuthDbContext _dbContext;
-        public UserService(ILogger<UserService> logger, AuthDbContext dbContext) : base(logger, dbContext)
+        private readonly IConfiguration _configuration;
+        public UserService(ILogger<UserService> logger, AuthDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;
+            _configuration = configuration;
         }
 
         public async Task<AuthUser> CreateUserAsync(CreateUserDto input)
@@ -80,6 +87,45 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
             userFind.CreatedDate = DateTime.UtcNow;
 
             _dbContext.SaveChanges();
+        }
+
+        public async Task<LoginResponseDto> LoginAsync(LoginDto input)
+        {
+            var user = _dbContext.Users.FirstOrDefault(u => u.UserName == input.UserName && u.Password == input.Password);
+            if (user == null)
+            {
+                _logger.LogWarning("Login failed: Invalid credentials.");
+                throw new UnauthorizedAccessException("Invalid username or password.");
+            }
+
+            var token = GenerateJwtToken(user);
+
+            _logger.LogInformation($"User {user.UserName} logged in successfully.");
+            return new LoginResponseDto
+            {
+                UserId = user.Id,
+                UserName = user.UserName,
+                Token = token,
+                Expiration = DateTime.UtcNow.AddHours(1)
+            };
+        }
+
+        private string GenerateJwtToken(AuthUser user)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["JwtSettings:SecretKey"]);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+            }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 }

@@ -41,8 +41,6 @@ namespace HA.Auth.ApplicationService.Startup
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IUserRole, UserRoleService>();
             builder.Services.AddScoped<IUserPermission, UserPermissionService>();
-            builder.Services.AddScoped<CheckUser>();
-            builder.Services.AddScoped<IPasswordHasher<AuthUser>, PasswordHasher<AuthUser>>();
         }
     }
 }
