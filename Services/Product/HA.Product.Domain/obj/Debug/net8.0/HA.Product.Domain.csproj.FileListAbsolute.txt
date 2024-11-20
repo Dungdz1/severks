@@ -1,0 +1,16 @@
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\bin\Debug\net8.0\HA.Product.Domain.deps.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\bin\Debug\net8.0\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\bin\Debug\net8.0\HA.Product.Domain.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\bin\Debug\net8.0\HA.Constan.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\bin\Debug\net8.0\HA.Constan.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.csproj.AssemblyReference.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.AssemblyInfoInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.AssemblyInfo.cs
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.sourcelink.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Produ.F9D92BC3.Up2Date
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\refint\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\HA.Product.Domain.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Domain\obj\Debug\net8.0\ref\HA.Product.Domain.dll

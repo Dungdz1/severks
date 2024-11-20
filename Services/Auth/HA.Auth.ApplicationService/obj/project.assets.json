@@ -1496,21 +1496,11 @@
           }
         }
       },
-      "HA.Auth.Constan/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/HA.Auth.Constan.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HA.Auth.Constan.dll": {}
-        }
-      },
       "HA.Auth.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "HA.Auth.Constan": "1.0.0"
+          "HA.Constan": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HA.Auth.Domain.dll": {}
@@ -1542,6 +1532,16 @@
         },
         "runtime": {
           "bin/placeholder/HA.Auth.Infrastructure.dll": {}
+        }
+      },
+      "HA.Constan/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/HA.Constan.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HA.Constan.dll": {}
         }
       },
       "HA.Shared.ApplicationService/1.0.0": {
@@ -4089,11 +4089,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "HA.Auth.Constan/1.0.0": {
-      "type": "project",
-      "path": "../../Shared/HA.Auth.Constan/HA.Auth.Constan.csproj",
-      "msbuildProject": "../../Shared/HA.Auth.Constan/HA.Auth.Constan.csproj"
-    },
     "HA.Auth.Domain/1.0.0": {
       "type": "project",
       "path": "../HA.Auth.Domain/HA.Auth.Domain.csproj",
@@ -4109,6 +4104,11 @@
       "path": "../HA.Auth.Infrastructure/HA.Auth.Infrastructure/HA.Auth.Infrastructure.csproj",
       "msbuildProject": "../HA.Auth.Infrastructure/HA.Auth.Infrastructure/HA.Auth.Infrastructure.csproj"
     },
+    "HA.Constan/1.0.0": {
+      "type": "project",
+      "path": "../../Shared/HA.Auth.Constan/HA.Constan.csproj",
+      "msbuildProject": "../../Shared/HA.Auth.Constan/HA.Constan.csproj"
+    },
     "HA.Shared.ApplicationService/1.0.0": {
       "type": "project",
       "path": "../../Shared/HA.Shared.ApplicationService/HA.Shared.ApplicationService.csproj",
@@ -4117,9 +4117,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "HA.Auth.Constan >= 1.0.0",
       "HA.Auth.Dtos >= 1.0.0",
       "HA.Auth.Infrastructure >= 1.0.0",
+      "HA.Constan >= 1.0.0",
       "HA.Shared.ApplicationService >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
@@ -4165,8 +4165,8 @@
             "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj"
             },
-            "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
-              "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj"
+            "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj": {
+              "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj"
             },
             "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj": {
               "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj"

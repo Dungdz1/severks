@@ -38,8 +38,8 @@
               "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure\\HA.Auth.Infrastructure.csproj"
               },
-              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
-                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj"
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj"
               },
               "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj": {
                 "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj"
@@ -134,8 +134,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
-                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj"
+              "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj": {
+                "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj"
               }
             }
           }
@@ -322,12 +322,12 @@
         }
       }
     },
-    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj": {
+    "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj",
-        "projectName": "HA.Auth.Constan",
-        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj",
+        "projectUniqueName": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj",
+        "projectName": "HA.Constan",
+        "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj",
         "packagesPath": "C:\\Users\\dung0\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\obj\\",
         "projectStyle": "PackageReference",

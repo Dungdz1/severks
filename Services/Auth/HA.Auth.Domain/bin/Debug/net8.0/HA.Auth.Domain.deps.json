@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v8.0": {
       "HA.Auth.Domain/1.0.0": {
         "dependencies": {
-          "HA.Auth.Constan": "1.0.0"
+          "HA.Constan": "1.0.0"
         },
         "runtime": {
           "HA.Auth.Domain.dll": {}
         }
       },
-      "HA.Auth.Constan/1.0.0": {
+      "HA.Constan/1.0.0": {
         "runtime": {
-          "HA.Auth.Constan.dll": {}
+          "HA.Constan.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HA.Auth.Constan/1.0.0": {
+    "HA.Constan/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

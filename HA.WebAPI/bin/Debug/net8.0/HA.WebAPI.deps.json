@@ -10,6 +10,8 @@
         "dependencies": {
           "HA.Auth.ApplicationService": "1.0.0",
           "HA.Auth.Dtos": "1.0.0",
+          "HA.Product.ApplicationService": "1.0.0",
+          "HA.Product.Dtos": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.EntityFrameworkCore.Design": "8.0.10",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -926,9 +928,9 @@
       },
       "HA.Auth.ApplicationService/1.0.0": {
         "dependencies": {
-          "HA.Auth.Constan": "1.0.0",
           "HA.Auth.Dtos": "1.0.0",
           "HA.Auth.Infrastructure": "1.0.0",
+          "HA.Constan": "1.0.0",
           "HA.Shared.ApplicationService": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
@@ -937,14 +939,9 @@
           "HA.Auth.ApplicationService.dll": {}
         }
       },
-      "HA.Auth.Constan/1.0.0": {
-        "runtime": {
-          "HA.Auth.Constan.dll": {}
-        }
-      },
       "HA.Auth.Domain/1.0.0": {
         "dependencies": {
-          "HA.Auth.Constan": "1.0.0"
+          "HA.Constan": "1.0.0"
         },
         "runtime": {
           "HA.Auth.Domain.dll": {}
@@ -963,6 +960,45 @@
         },
         "runtime": {
           "HA.Auth.Infrastructure.dll": {}
+        }
+      },
+      "HA.Constan/1.0.0": {
+        "runtime": {
+          "HA.Constan.dll": {}
+        }
+      },
+      "HA.Product.ApplicationService/1.0.0": {
+        "dependencies": {
+          "HA.Constan": "1.0.0",
+          "HA.Product.Dtos": "1.0.0",
+          "HA.Product.Infrastructure": "1.0.0",
+          "HA.Shared.ApplicationService": "1.0.0"
+        },
+        "runtime": {
+          "HA.Product.ApplicationService.dll": {}
+        }
+      },
+      "HA.Product.Domain/1.0.0": {
+        "dependencies": {
+          "HA.Constan": "1.0.0"
+        },
+        "runtime": {
+          "HA.Product.Domain.dll": {}
+        }
+      },
+      "HA.Product.Dtos/1.0.0": {
+        "runtime": {
+          "HA.Product.Dtos.dll": {}
+        }
+      },
+      "HA.Product.Infrastructure/1.0.0": {
+        "dependencies": {
+          "HA.Product.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
+        },
+        "runtime": {
+          "HA.Product.Infrastructure.dll": {}
         }
       },
       "HA.Shared.ApplicationService/1.0.0": {
@@ -1522,11 +1558,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HA.Auth.Constan/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "HA.Auth.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1538,6 +1569,31 @@
       "sha512": ""
     },
     "HA.Auth.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Constan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Product.ApplicationService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Product.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Product.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Product.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

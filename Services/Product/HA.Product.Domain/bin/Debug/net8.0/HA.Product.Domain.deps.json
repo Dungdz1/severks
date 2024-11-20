@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HA.Product.Domain/1.0.0": {
+        "dependencies": {
+          "HA.Constan": "1.0.0"
+        },
+        "runtime": {
+          "HA.Product.Domain.dll": {}
+        }
+      },
+      "HA.Constan/1.0.0": {
+        "runtime": {
+          "HA.Constan.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HA.Product.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Constan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

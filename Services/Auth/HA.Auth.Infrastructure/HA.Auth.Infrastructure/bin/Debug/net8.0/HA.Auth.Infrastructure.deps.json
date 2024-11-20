@@ -917,17 +917,17 @@
           }
         }
       },
-      "HA.Auth.Constan/1.0.0": {
-        "runtime": {
-          "HA.Auth.Constan.dll": {}
-        }
-      },
       "HA.Auth.Domain/1.0.0": {
         "dependencies": {
-          "HA.Auth.Constan": "1.0.0"
+          "HA.Constan": "1.0.0"
         },
         "runtime": {
           "HA.Auth.Domain.dll": {}
+        }
+      },
+      "HA.Constan/1.0.0": {
+        "runtime": {
+          "HA.Constan.dll": {}
         }
       }
     }
@@ -1470,12 +1470,12 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "HA.Auth.Constan/1.0.0": {
+    "HA.Auth.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "HA.Auth.Domain/1.0.0": {
+    "HA.Constan/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

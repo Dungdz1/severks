@@ -18,6 +18,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Services\Auth\HA.Auth.ApplicationService\HA.Auth.ApplicationService.csproj" />
     <ProjectReference Include="..\Services\Auth\HA.Auth.Dtos\HA.Auth.Dtos.csproj" />
+    <ProjectReference Include="..\Services\Product\HA.Product.ApplicationService\HA.Product.ApplicationService.csproj" />
+    <ProjectReference Include="..\Services\Product\HA.Product.Dtos\HA.Product.Dtos.csproj" />
   </ItemGroup>
 
 </Project>

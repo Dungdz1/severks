@@ -1,8 +1,6 @@
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Auth.Domain.deps.json
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Auth.Domain.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Auth.Domain.pdb
-C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Auth.Constan.dll
-C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Auth.Constan.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\HA.Auth.Domain.csproj.AssemblyReference.cache
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\HA.Auth.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\HA.Auth.Domain.AssemblyInfoInputs.cache
@@ -13,3 +11,6 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\refint\HA.Auth.Domain.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\HA.Auth.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\ref\HA.Auth.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Constan.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\bin\Debug\net8.0\HA.Constan.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Domain\obj\Debug\net8.0\HA.Auth.Domain.sourcelink.json

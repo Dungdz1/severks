@@ -1,0 +1,12 @@
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\bin\Debug\net8.0\HA.Product.Dtos.deps.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\bin\Debug\net8.0\HA.Product.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\bin\Debug\net8.0\HA.Product.Dtos.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.AssemblyInfoInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.AssemblyInfo.cs
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.sourcelink.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\refint\HA.Product.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\HA.Product.Dtos.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Dtos\obj\Debug\net8.0\ref\HA.Product.Dtos.dll

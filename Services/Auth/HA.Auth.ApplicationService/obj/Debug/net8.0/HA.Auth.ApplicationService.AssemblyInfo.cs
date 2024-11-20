@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HA.Auth.ApplicationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8b736e14cd4ba5d90e72ecb7769cb6d1d70b87e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5b1057e093ab30bb662916b3cc93ae2a31fdb50")]
 [assembly: System.Reflection.AssemblyProductAttribute("HA.Auth.ApplicationService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HA.Auth.ApplicationService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

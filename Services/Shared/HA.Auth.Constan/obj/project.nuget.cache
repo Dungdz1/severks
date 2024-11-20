@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C8gfIaZlXf0ZdREWZImWtbHoWF4TojbdzFQ3aikKCRu7jUcsRumsBUdoGRnbujl1UHbviGc7KeoHzhsSygT4Wg==",
+  "dgSpecHash": "EZwnOpBdHM3iVqUccclSZ4gk8uDfs1eEvJsuFRuGMf6fjHGGi9TLTCFwe9IV0gKWAW7aWGDw1WaBuqyJ6ehbYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Auth.Constan.csproj",
+  "projectFilePath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Auth.Constan\\HA.Constan.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
