@@ -9,7 +9,8 @@ namespace HA.Product.Domain
     public class ProdImage
     {
         public int Id { get; set; }
-        public string ImgName { get; set; }
+        public string ImageName { get; set; }
+        public string ImageUrl { get; set; }
 
         //ListImg de bang trung gian
     }

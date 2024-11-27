@@ -9,6 +9,6 @@ namespace HA.Product.Dtos.ProductModule.Category
     public class ProductCategory
     {
         public int CategoryId { get; set; }
-        List<int> ProductIds { get; set; } 
+        public List<int> ProductIds { get; set; } 
     }
 }

@@ -8,5 +8,7 @@ namespace HA.Product.Dtos.ProductModule.Brand
 {
     public class ProductBrand
     {
+        public int BrandId { get; set; }
+        public List<int> ProductId1 { get; set; }
     }
 }

@@ -8,5 +8,8 @@ namespace HA.Product.Domain
 {
     public class ProdProductSale
     {
+        public int Id { get; set; }
+        public int ProductId { get; set; }
+        public int SaleId { get; set; }
     }
 }

@@ -5,7 +5,7 @@
 namespace HA.WebAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class sohai : Migration
+    public partial class ProductTypeSS2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

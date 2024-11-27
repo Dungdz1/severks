@@ -8,5 +8,7 @@ namespace HA.Product.Dtos.ProductModule.Type
 {
     public class ProductType
     {
+        public int TypeId { get; set; }
+        public List<int> ProductIds { get; set; }
     }
 }

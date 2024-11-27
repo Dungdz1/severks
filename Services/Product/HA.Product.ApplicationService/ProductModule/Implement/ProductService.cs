@@ -2,7 +2,11 @@
 using HA.Product.ApplicationService.ProductModule.Abstracts;
 using HA.Product.Domain;
 using HA.Product.Dtos.ProductModule;
+using HA.Product.Dtos.ProductModule.Brand;
+using HA.Product.Dtos.ProductModule.Category;
+using HA.Product.Dtos.ProductModule.Img;
 using HA.Product.Dtos.ProductModule.Sale;
+using HA.Product.Dtos.ProductModule.Type;
 using HA.Product.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -24,6 +28,124 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             _logger = logger;
             _dbContext = dbContext;
             _configuration = configuration;
+        }
+
+        public void AddProductBrand(ProductBrand input)
+        {
+            foreach (var productId in input.ProductId1)
+            {
+                var productFind = _dbContext.ProductBrands.FirstOrDefault(s => 
+                s.ProductId == productId && s.BrandId == input.BrandId);
+                
+                if (productFind != null)
+                {
+                    continue;
+                }
+                _dbContext.ProductBrands.Add(
+                    new ProdProductBrand
+                    {
+                        ProductId = productId,
+                        BrandId = input.BrandId,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void AddProductSale(ProductSale input)
+        {
+            foreach (var productId in input.ProductIds)
+            {
+                var productFind = _dbContext.ProductSales.FirstOrDefault(s =>
+                s.ProductId == productId && s.SaleId == input.SaleId);
+
+                if (productFind != null)
+                {
+                    continue;
+                }
+                _dbContext.ProductSales.Add(
+                    new ProdProductSale
+                    {
+                        ProductId = productId,
+                        SaleId = input.SaleId,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
+        public void AddProductImage(ProductImage input)
+        {
+            foreach (var productId in input.ProductIds)
+            {
+                var productFind = _dbContext.ProductImages.FirstOrDefault(s =>
+                s.ProductId == productId && s.ImageId == input.ImageId);
+
+                if (productFind != null)
+                {
+                    continue;
+                }
+                _dbContext.ProductImages.Add(
+                    new ProdProductImage
+                    {
+                        ProductId = productId,
+                        ImageId = input.ImageId,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void AddProductType(ProductType input)
+        {
+            foreach (var productId in input.ProductIds)
+            {
+                var productFind = _dbContext.ProductTypes.FirstOrDefault(s =>
+                s.ProductId == productId && s.TypeId == input.TypeId);
+
+                if (productFind != null)
+                {
+                    continue;
+                }
+                _dbContext.ProductTypes.Add(
+                    new ProdProductType
+                    {
+                        ProductId = productId,
+                        TypeId = input.TypeId,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void AddProductCategory(ProductCategory input)
+        {
+            foreach (var productId in input.ProductIds)
+            {
+                var productFind = _dbContext.ProductCategories.FirstOrDefault(s =>
+                    s.ProductId == productId && s.CategoryId == input.CategoryId
+                );
+
+                if (productFind != null)
+                {
+                    continue;
+                }
+
+                _dbContext.ProductCategories.Add(
+                    new ProdProductCategory
+                    {
+                        ProductId = productId,
+                        CategoryId = input.CategoryId,
+                    });
+            }
+            _dbContext.SaveChanges();
+        }
+
+
+        public List<ProductDto> GetAllProduct(int categoryId)
+        {
+            throw new NotImplementedException();
+            // Viet tiep truy van neu can thiet
+        }
+
+        public List<ProductDto> GetAllProductBrand(int brandId)
+        {
+            throw new NotImplementedException();
         }
 
         ProductDto IProductService.CreatenewProduct(CreateProductDto input)
@@ -78,6 +200,21 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             productFind.ProdImg = input.ProdImg;
             productFind.ProdDescription = input.ProdDescription;
             productFind.ProdStock = input.ProdStock;
+        }
+
+        public List<ProductDto> GetAllProductType(int typeId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ProductDto> GetAllProductImage(int imageId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ProductDto> GetAllProductSale(int saleId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

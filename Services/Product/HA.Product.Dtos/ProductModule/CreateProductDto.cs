@@ -15,8 +15,8 @@ namespace HA.Product.Dtos.ProductModule
             set => _prodname = value;
         }
 
-        private decimal _prodprice;
-        public decimal ProdPrice
+        private string _prodprice;
+        public string ProdPrice
         {
             get => _prodprice;
             set => _prodprice = value;

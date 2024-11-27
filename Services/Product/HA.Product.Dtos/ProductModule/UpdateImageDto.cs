@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HA.Product.Dtos.ProductModule.Img
+namespace HA.Product.Dtos.ProductModule
 {
-    public class ProductImg
+    public class UpdateImageDto : CreateImageDto
     {
+        public int Id { get; set; }
     }
 }
