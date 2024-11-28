@@ -1,0 +1,16 @@
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\bin\Debug\net8.0\HA.Order.Domain.deps.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\bin\Debug\net8.0\HA.Order.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\bin\Debug\net8.0\HA.Order.Domain.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\bin\Debug\net8.0\HA.Constan.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\bin\Debug\net8.0\HA.Constan.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.csproj.AssemblyReference.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.AssemblyInfoInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.AssemblyInfo.cs
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.sourcelink.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.15BF8520.Up2Date
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\refint\HA.Order.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\HA.Order.Domain.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Domain\obj\Debug\net8.0\ref\HA.Order.Domain.dll

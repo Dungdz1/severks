@@ -1,4 +1,5 @@
-﻿using HA.Product.Domain;
+﻿using HA.Auth.Domain;
+using HA.Product.Domain;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace HA.Product.Infrastructure
         public DbSet<ProdProductImage> ProductImages { get; set; }
         public DbSet<ProdProductSale> ProductSales { get; set; }
         public DbSet<ProdSale> Sales { get; set; }
+
+        public DbSet<ProdCart> ProductCarts { get; set; }
 
         public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -88,6 +91,19 @@ namespace HA.Product.Infrastructure
                 .HasOne<ProdSale>()
                 .WithMany()
                 .HasForeignKey(e => e.SaleId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder
+                .Entity<ProdCart>()
+                .HasOne<ProdProduct>()
+                .WithMany()
+                .HasForeignKey(e => e.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder
+                .Entity<ProdCart>()
+                .HasOne<AuthUser>()
+                .WithOne()
+                .HasForeignKey<ProdCart>(e => e.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

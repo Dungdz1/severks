@@ -1,5 +1,6 @@
 ﻿using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Brand;
+using HA.Product.Dtos.ProductModule.Cart;
 using HA.Product.Dtos.ProductModule.Category;
 using HA.Product.Dtos.ProductModule.Img;
 using HA.Product.Dtos.ProductModule.Sale;
@@ -28,5 +29,7 @@ namespace HA.Product.ApplicationService.ProductModule.Abstracts
         List<ProductDto> GetAllProductImage(int imageId);
         void AddProductSale(ProductSale input);
         List<ProductDto> GetAllProductSale(int saleId);
+        void AddProducttoCart(AddtoCart input);
+        List<ProductDto> GetAllProductToCart(int userId);
     }
 }

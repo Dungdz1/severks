@@ -506,6 +506,14 @@
           }
         }
       },
+      "HA.Auth.Domain/1.0.0": {
+        "dependencies": {
+          "HA.Constan": "1.0.0"
+        },
+        "runtime": {
+          "HA.Auth.Domain.dll": {}
+        }
+      },
       "HA.Constan/1.0.0": {
         "runtime": {
           "HA.Constan.dll": {}
@@ -513,6 +521,7 @@
       },
       "HA.Product.Domain/1.0.0": {
         "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
           "HA.Constan": "1.0.0"
         },
         "runtime": {
@@ -526,6 +535,7 @@
       },
       "HA.Product.Infrastructure/1.0.0": {
         "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
           "HA.Product.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
@@ -931,6 +941,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "HA.Auth.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "HA.Constan/1.0.0": {
       "type": "project",

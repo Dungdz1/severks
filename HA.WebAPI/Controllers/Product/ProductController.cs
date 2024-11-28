@@ -2,6 +2,7 @@
 using HA.Product.ApplicationService.ProductModule.Abstracts;
 using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Brand;
+using HA.Product.Dtos.ProductModule.Cart;
 using HA.Product.Dtos.ProductModule.Category;
 using HA.Product.Dtos.ProductModule.Img;
 using HA.Product.Dtos.ProductModule.Sale;
@@ -200,6 +201,30 @@ namespace HA.WebAPI.Controllers.Product
                 }
 
                 _productService.AddProductSale(input);
+
+                return Ok(new { Message = "Product categories added successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    Message = "An error occurred while adding product sales.",
+                    Error = ex.Message
+                });
+            }
+        }
+
+        [HttpPost("AddProducttoCart")]
+        public IActionResult AddProducttoCart([FromBody] AddtoCart input)
+        {
+            try
+            {
+                if (input == null || input.ProductIds == null || !input.ProductIds.Any())
+                {
+                    return BadRequest(new { Message = "Invalid input data." });
+                }
+
+                _productService.AddProducttoCart(input);
 
                 return Ok(new { Message = "Product categories added successfully." });
             }

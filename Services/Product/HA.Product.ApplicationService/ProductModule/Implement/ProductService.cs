@@ -3,6 +3,7 @@ using HA.Product.ApplicationService.ProductModule.Abstracts;
 using HA.Product.Domain;
 using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Brand;
+using HA.Product.Dtos.ProductModule.Cart;
 using HA.Product.Dtos.ProductModule.Category;
 using HA.Product.Dtos.ProductModule.Img;
 using HA.Product.Dtos.ProductModule.Sale;
@@ -29,7 +30,26 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             _dbContext = dbContext;
             _configuration = configuration;
         }
+        public void AddProducttoCart(AddtoCart input)
+        {
+            foreach (var productId in input.ProductIds)
+            {
+                var productFind = _dbContext.ProductCarts.FirstOrDefault(s =>
+                s.ProductId == productId && s.UserId == input.UserId);
 
+                if (productFind != null)
+                {
+                    continue;
+                }
+                _dbContext.ProductCarts.Add(
+                    new ProdCart
+                    {
+                        ProductId = productId,
+                        UserId = input.UserId,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
         public void AddProductBrand(ProductBrand input)
         {
             foreach (var productId in input.ProductId1)
@@ -213,6 +233,11 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
         }
 
         public List<ProductDto> GetAllProductSale(int saleId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ProductDto> GetAllProductToCart(int userId)
         {
             throw new NotImplementedException();
         }

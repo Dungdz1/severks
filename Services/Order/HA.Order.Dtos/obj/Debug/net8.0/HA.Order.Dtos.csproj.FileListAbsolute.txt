@@ -1,0 +1,12 @@
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\bin\Debug\net8.0\HA.Order.Dtos.deps.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\bin\Debug\net8.0\HA.Order.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\bin\Debug\net8.0\HA.Order.Dtos.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.AssemblyInfoInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.AssemblyInfo.cs
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.sourcelink.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\refint\HA.Order.Dtos.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\HA.Order.Dtos.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Dtos\obj\Debug\net8.0\ref\HA.Order.Dtos.dll
