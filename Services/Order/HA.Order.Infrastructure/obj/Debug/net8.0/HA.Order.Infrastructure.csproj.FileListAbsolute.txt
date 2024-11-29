@@ -1,8 +1,12 @@
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Order.Infrastructure.deps.json
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Order.Infrastructure.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Order.Infrastructure.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Auth.Domain.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Constan.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Order.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Auth.Domain.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Product.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Order.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\bin\Debug\net8.0\HA.Constan.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Order\HA.Order.Infrastructure\obj\Debug\net8.0\HA.Order.Infrastructure.csproj.AssemblyReference.cache

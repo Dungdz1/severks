@@ -1,8 +1,10 @@
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Product.Infrastructure.deps.json
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Product.Infrastructure.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Product.Infrastructure.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Auth.Domain.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Constan.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Auth.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Product.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Constan.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\obj\Debug\net8.0\HA.Product.Infrastructure.csproj.AssemblyReference.cache
@@ -16,5 +18,3 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infra
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\obj\Debug\net8.0\refint\HA.Product.Infrastructure.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\obj\Debug\net8.0\HA.Product.Infrastructure.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\obj\Debug\net8.0\ref\HA.Product.Infrastructure.dll
-C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Auth.Domain.dll
-C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Infrastructure\bin\Debug\net8.0\HA.Auth.Domain.pdb

@@ -1,6 +1,7 @@
 ﻿using HA.Auth.ApplicationService.Common;
 using HA.Auth.ApplicationService.UserModule.Abstract;
 using HA.Auth.Domain;
+using HA.Auth.Dtos.Address;
 using HA.Auth.Dtos.Logg;
 using HA.Auth.Dtos.UserModule;
 using HA.Auth.Infrastructure;
@@ -126,6 +127,27 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+        public void AddAddressToUser(AddressUser input)
+        {
+            foreach (var addressId in input.AddressIds)
+            {
+                var addressFind = _dbContext.AddressesUsers.FirstOrDefault(s =>
+                s.AddressId == addressId && s.UserId == input.UserId);
+
+                if (addressFind != null)
+                {
+                    continue;
+                }
+                _dbContext.AddressesUsers.Add(
+                    new AuthAddressUser
+                    {
+                        AddressId = addressId,
+                        UserId = input.UserId,
+                    });
+                _dbContext.SaveChanges();
+            }
         }
     }
 }

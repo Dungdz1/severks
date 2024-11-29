@@ -5,6 +5,7 @@ using HA.Auth.Infrastructure;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using HA.Product.ApplicationService.Startup;
+using HA.Order.ApplicationService.Startup;
 
 namespace HA.WebAPI
 {
@@ -25,6 +26,7 @@ namespace HA.WebAPI
             builder.Services.AddSwaggerGen();
             builder.ConfigureAuth(typeof(Program).Namespace);
             builder.ConfigureProduct(typeof(Program).Namespace);
+            builder.ConfigureOrder(typeof(Program).Namespace);
 
             var app = builder.Build();
 

@@ -3,188 +3,144 @@
   "WorkspaceRootPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241128114733_Cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HA.WebAPI\\Migrations\\20241128114733_Cartproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\order\\orderpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\order\\orderpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01183C77-E1D4-4835-BCFB-602B03011342}|Services\\Product\\HA.Product.Infrastructure\\HA.Product.Infrastructure.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.infrastructure\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01183C77-E1D4-4835-BCFB-602B03011342}|Services\\Product\\HA.Product.Infrastructure\\HA.Product.Infrastructure.csproj|solutionrelative:services\\product\\ha.product.infrastructure\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\order\\orderdiscountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\order\\orderdiscountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\order\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\order\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.dtos\\productorder\\addproducttoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|solutionrelative:services\\order\\ha.order.dtos\\productorder\\addproducttoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\ordermodule\\abstract\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\ordermodule\\abstract\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\ordermodule\\implements\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\ordermodule\\implements\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.dtos\\orderdiscount\\adddiscounttoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|solutionrelative:services\\order\\ha.order.dtos\\orderdiscount\\adddiscounttoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\product\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\implement\\productsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\implement\\productsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\implement\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\implement\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\cart\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\cart\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\iproductsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\iproductsearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\cart\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\cart\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\category\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\category\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\category\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\brand\\productbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\brand\\productbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodproductbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodproductbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDA7929-DB56-49F7-982A-D0B878959EDB}|Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.domain\\authuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDA7929-DB56-49F7-982A-D0B878959EDB}|Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj|solutionrelative:services\\auth\\ha.auth.domain\\authuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|solutionrelative:services\\order\\ha.order.dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{649ED661-A42B-4E8B-AEAE-43DCAEDCE582}|Services\\Order\\HA.Order.Infrastructure\\HA.Order.Infrastructure.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{649ED661-A42B-4E8B-AEAE-43DCAEDCE582}|Services\\Order\\HA.Order.Infrastructure\\HA.Order.Infrastructure.csproj|solutionrelative:services\\order\\ha.order.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\product\\productsalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\product\\productsalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\product\\productbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\product\\productbrandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\isaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\isaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\ordermodule\\abstract\\idiscountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\ordermodule\\abstract\\idiscountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|solutionrelative:services\\order\\ha.order.dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\img\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\img\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\startup\\orderstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\startup\\orderstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\sale\\productsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\sale\\productsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\sale\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\sale\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\OrderDb\\20241129010713_Orderkn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HA.WebAPI\\Migrations\\OrderDb\\20241129010713_Orderkn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\type\\typedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\type\\typedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\ProductDb\\20241129010556_Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HA.WebAPI\\Migrations\\ProductDb\\20241129010556_Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodproductsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodproductsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241129010455_InitialCreateAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HA.WebAPI\\Migrations\\20241129010455_InitialCreateAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodproductimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodproductimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\implement\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\implement\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01183C77-E1D4-4835-BCFB-602B03011342}|Services\\Product\\HA.Product.Infrastructure\\HA.Product.Infrastructure.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.infrastructure\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01183C77-E1D4-4835-BCFB-602B03011342}|Services\\Product\\HA.Product.Infrastructure\\HA.Product.Infrastructure.csproj|solutionrelative:services\\product\\ha.product.infrastructure\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\implement\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\implement\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{649ED661-A42B-4E8B-AEAE-43DCAEDCE582}|Services\\Order\\HA.Order.Infrastructure\\HA.Order.Infrastructure.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.infrastructure\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{649ED661-A42B-4E8B-AEAE-43DCAEDCE582}|Services\\Order\\HA.Order.Infrastructure\\HA.Order.Infrastructure.csproj|solutionrelative:services\\order\\ha.order.infrastructure\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\updateimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\updateimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\OrderDb\\20241128173818_Ordernon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HA.WebAPI\\Migrations\\OrderDb\\20241128173818_Ordernon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\createimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\createimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.dtos\\userorder\\userorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E437E8FD-F5B3-4430-B157-E8DA333B2918}|Services\\Order\\HA.Order.Dtos\\HA.Order.Dtos.csproj|solutionrelative:services\\order\\ha.order.dtos\\userorder\\userorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\type\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\type\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\orderuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\orderuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\oddelivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\oddelivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodproductcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodproductcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\oddetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\oddetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\itypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\abstracts\\itypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\odpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\odpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\productmodule\\implement\\typeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\productmodule\\implement\\typeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\ordermodule\\implements\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\ordermodule\\implements\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\startup\\productstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\startup\\productstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\ordermodule\\abstract\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\ordermodule\\abstract\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\startup\\authstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\startup\\authstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\odorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\odorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\updatetypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\updatetypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\odorderdiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\odorderdiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.domain\\prodtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3837D288-A853-490C-84AC-1E8DCA46E092}|Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj|solutionrelative:services\\product\\ha.product.domain\\prodtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\addressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\addressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\createtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\createtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\brand\\branddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\brand\\branddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.dtos\\productmodule\\updatebranddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D200A07C-8C01-414A-A1A2-E4C81EC6060B}|Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj|solutionrelative:services\\product\\ha.product.dtos\\productmodule\\updatebranddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\migrations\\20241127102748_producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\migrations\\20241127102748_producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\odorderpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\odorderpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -194,579 +150,460 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241128114733_Cartproduct.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241128114733_Cartproduct.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\20241128114733_Cartproduct.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241128114733_Cartproduct.cs",
-              "RelativeToolTip": "HA.WebAPI\\Migrations\\20241128114733_Cartproduct.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwCwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T11:47:34.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductController.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Product\\ProductController.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductController.cs",
-              "RelativeToolTip": "HA.WebAPI\\Controllers\\Product\\ProductController.cs",
-              "ViewState": "AQIAANwAAAAAAAAAAADwv+IAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T11:45:22.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CartDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\CartDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\CartDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\CartDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\CartDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:42:31.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAcwB8AAAAdAAAA",
+              "Title": "AddProducttoOrder.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\ProductOrder\\AddProducttoOrder.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Dtos\\ProductOrder\\AddProducttoOrder.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\ProductOrder\\AddProducttoOrder.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Dtos\\ProductOrder\\AddProducttoOrder.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:04:39.7Z",
+              "WhenOpened": "2024-11-29T01:59:25.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AddtoCart.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\AddtoCart.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\AddtoCart.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\AddtoCart.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Cart\\AddtoCart.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Title": "AddDiscounttoOrder.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\OrderDiscount\\AddDiscounttoOrder.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Dtos\\OrderDiscount\\AddDiscounttoOrder.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\OrderDiscount\\AddDiscounttoOrder.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Dtos\\OrderDiscount\\AddDiscounttoOrder.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:42:41.484Z",
+              "WhenOpened": "2024-11-29T01:55:05.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAmwCAAAAAkAAAA",
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IOrderService.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IOrderService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAcwBsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:43:03.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAABkAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:07:03.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductCategory.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\ProductCategory.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\ProductCategory.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\ProductCategory.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\ProductCategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:44:52.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\CategoryDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\CategoryDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\CategoryDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Category\\CategoryDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:12:01.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductBrand.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\ProductBrand.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\ProductBrand.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\ProductBrand.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\ProductBrand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:36:34.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IBrandService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:58:30.316Z",
+              "WhenOpened": "2024-11-29T01:51:47.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ProdCart.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdCart.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdCart.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdCart.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdCart.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:57:10.002Z",
+              "WhenOpened": "2024-11-29T01:45:14.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProdProductBrand.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductBrand.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdProductBrand.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductBrand.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdProductBrand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductController.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Product\\ProductController.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductController.cs",
+              "RelativeToolTip": "HA.WebAPI\\Controllers\\Product\\ProductController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAuwI4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:57:37.92Z",
+              "WhenOpened": "2024-11-29T01:38:28.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthUser.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\AuthUser.cs",
-              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.Domain\\AuthUser.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\AuthUser.cs",
-              "RelativeToolTip": "Services\\Auth\\HA.Auth.Domain\\AuthUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderController.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Order\\OrderController.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderController.cs",
+              "RelativeToolTip": "HA.WebAPI\\Controllers\\Order\\OrderController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBkAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:24:43.856Z",
+              "WhenOpened": "2024-11-29T01:38:24.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ProdProduct.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProduct.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdProduct.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProduct.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdProduct.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "Title": "CreateOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\CreateOrderDto.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Dtos\\CreateOrderDto.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\CreateOrderDto.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Dtos\\CreateOrderDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:24:21.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\Class1.cs",
-              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Dtos\\Class1.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\Class1.cs",
-              "RelativeToolTip": "Services\\Order\\HA.Order.Dtos\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:40:07.022Z",
+              "WhenOpened": "2024-11-29T01:36:55.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Infrastructure\\Class1.cs",
-              "RelativeToolTip": "Services\\Order\\HA.Order.Infrastructure\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Title": "IBrandService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IBrandService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:39:18.082Z",
+              "WhenOpened": "2024-11-29T01:33:38.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\Class1.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\Class1.cs",
-              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:38:16.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\Class1.cs",
-              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\Class1.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\Class1.cs",
-              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:37:38.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ISaleService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ISaleService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ISaleService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ISaleService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ISaleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:06:32.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductSaleController.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductSaleController.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Product\\ProductSaleController.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductSaleController.cs",
-              "RelativeToolTip": "HA.WebAPI\\Controllers\\Product\\ProductSaleController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAkwCgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:58:07.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 12,
               "Title": "ProductBrandController.cs",
               "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductBrandController.cs",
               "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Product\\ProductBrandController.cs",
               "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Product\\ProductBrandController.cs",
               "RelativeToolTip": "HA.WebAPI\\Controllers\\Product\\ProductBrandController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAIwDkAAAAJAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:11:23.119Z"
+              "WhenOpened": "2024-11-29T01:29:56.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ProdSale.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdSale.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdSale.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdSale.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdSale.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "DocumentIndex": 0,
+              "Title": "OrderPaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
+              "RelativeToolTip": "HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:07:10.221Z"
+              "WhenOpened": "2024-11-29T01:29:31.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderDiscountController.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
+              "RelativeToolTip": "HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAxwBcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:29:12.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:13:03.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductSearchService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductSearchService.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductSearchService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductSearchService.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ProductSearchService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:11:44.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IProductSearchService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductSearchService.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductSearchService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductSearchService.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\IProductSearchService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:10:35.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20241129010713_Orderkn.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\OrderDb\\20241129010713_Orderkn.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\OrderDb\\20241129010713_Orderkn.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\OrderDb\\20241129010713_Orderkn.cs",
+              "RelativeToolTip": "HA.WebAPI\\Migrations\\OrderDb\\20241129010713_Orderkn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:07:13.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20241129010556_Product.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\ProductDb\\20241129010556_Product.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\ProductDb\\20241129010556_Product.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\ProductDb\\20241129010556_Product.cs",
+              "RelativeToolTip": "HA.WebAPI\\Migrations\\ProductDb\\20241129010556_Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:05:56.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20241129010455_InitialCreateAuth.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241129010455_InitialCreateAuth.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\20241129010455_InitialCreateAuth.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241129010455_InitialCreateAuth.cs",
+              "RelativeToolTip": "HA.WebAPI\\Migrations\\20241129010455_InitialCreateAuth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:04:56.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "HA.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\appsettings.json",
+              "RelativeToolTip": "HA.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAkAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T17:52:59.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "ProductImage.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Img\\ProductImage.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Img\\ProductImage.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Img\\ProductImage.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Img\\ProductImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAdAAAA",
+              "Title": "20241128173818_Ordernon.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\OrderDb\\20241128173818_Ordernon.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\OrderDb\\20241128173818_Ordernon.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\OrderDb\\20241128173818_Ordernon.cs",
+              "RelativeToolTip": "HA.WebAPI\\Migrations\\OrderDb\\20241128173818_Ordernon.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:19:04.456Z"
+              "WhenOpened": "2024-11-28T17:38:18.26Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "ProductSale.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\ProductSale.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\ProductSale.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\ProductSale.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\ProductSale.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Title": "UserOrder.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\UserOrder\\UserOrder.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Dtos\\UserOrder\\UserOrder.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Dtos\\UserOrder\\UserOrder.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Dtos\\UserOrder\\UserOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:05:41.758Z"
+              "WhenOpened": "2024-11-28T17:32:34.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "SaleDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\SaleDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\SaleDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\SaleDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Sale\\SaleDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "Title": "OrderUser.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OrderUser.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OrderUser.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OrderUser.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OrderUser.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:18:43.463Z"
+              "WhenOpened": "2024-11-28T17:31:17.637Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\TypeDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\TypeDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\TypeDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\TypeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 22,
+              "Title": "OrderDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Infrastructure\\OrderDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Infrastructure\\OrderDbContext.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Infrastructure\\OrderDbContext.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Infrastructure\\OrderDbContext.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCAAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:19:13.702Z"
+              "WhenOpened": "2024-11-28T17:30:53.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ProdProductSale.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductSale.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdProductSale.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductSale.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdProductSale.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "DocumentIndex": 21,
+              "Title": "ProductDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.Infrastructure\\ProductDbContext.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA7wB8AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:06:31.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ProdProductImage.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductImage.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdProductImage.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductImage.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdProductImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:20:33.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ImageService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ImageService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ImageService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ImageService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\ImageService.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAcwFoAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:28:25.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\CategoryService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\CategoryService.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAcwFwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:18:32.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UpdateImageDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateImageDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateImageDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateImageDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateImageDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:29:19.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CreateImageDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateImageDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateImageDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateImageDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateImageDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:29:05.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ProdImage.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdImage.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdImage.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdImage.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:19:30.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ProdProductCategory.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductCategory.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdProductCategory.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdProductCategory.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdProductCategory.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:04:35.578Z"
+              "WhenOpened": "2024-11-28T16:41:26.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "ProductType.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\ProductType.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\ProductType.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\ProductType.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Type\\ProductType.cs",
+              "Title": "AddressService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:05:54.045Z"
+              "WhenOpened": "2024-11-28T16:39:34.242Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ITypeService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ITypeService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ITypeService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ITypeService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Abstracts\\ITypeService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAkAAAA",
+              "DocumentIndex": 28,
+              "Title": "OdPayment.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:16:25.142Z"
+              "WhenOpened": "2024-11-28T16:31:28.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ProductStartup.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwCoAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:43:45.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AuthStartup.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\Startup\\AuthStartup.cs",
-              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\Startup\\AuthStartup.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\Startup\\AuthStartup.cs",
-              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\Startup\\AuthStartup.cs",
+              "DocumentIndex": 34,
+              "Title": "OdOrderPayment.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdOrderPayment.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdOrderPayment.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdOrderPayment.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdOrderPayment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:43:38.088Z"
+              "WhenOpened": "2024-11-28T16:31:28.18Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "TypeService.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\TypeService.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\TypeService.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\TypeService.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\ProductModule\\Implement\\TypeService.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwDkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:18:21.37Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "20241127102748_ProductType.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241127102748_ProductType.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\20241127102748_ProductType.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241127102748_ProductType.cs",
-              "RelativeToolTip": "HA.WebAPI\\Migrations\\20241127102748_ProductType.cs",
+              "DocumentIndex": 32,
+              "Title": "OdOrderDiscount.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdOrderDiscount.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdOrderDiscount.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdOrderDiscount.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdOrderDiscount.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:27:49.16Z"
+              "WhenOpened": "2024-11-28T16:31:27.45Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ProdType.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdType.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Domain\\ProdType.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\ProdType.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Domain\\ProdType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "DocumentIndex": 31,
+              "Title": "OdOrder.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdOrder.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdOrder.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdOrder.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdOrder.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:15:28.91Z"
+              "WhenOpened": "2024-11-28T16:31:26.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UpdateTypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateTypeDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateTypeDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateTypeDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateTypeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "DocumentIndex": 27,
+              "Title": "OdDetail.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdDetail.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdDetail.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdDetail.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdDetail.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:14:03.988Z"
+              "WhenOpened": "2024-11-28T16:31:25.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "CreateTypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateTypeDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateTypeDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateTypeDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\CreateTypeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "DocumentIndex": 26,
+              "Title": "OdDelivery.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdDelivery.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdDelivery.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdDelivery.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdDelivery.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:13:54.092Z"
+              "WhenOpened": "2024-11-28T16:31:25.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "BrandDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\BrandDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\BrandDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\BrandDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\Brand\\BrandDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "DocumentIndex": 15,
+              "Title": "OrderStartup.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\Startup\\OrderStartup.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\Startup\\OrderStartup.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\Startup\\OrderStartup.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\Startup\\OrderStartup.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:57:41.389Z"
+              "WhenOpened": "2024-11-28T16:31:20.099Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "UpdateBrandDto.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateBrandDto.cs",
-              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateBrandDto.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateBrandDto.cs",
-              "RelativeToolTip": "Services\\Product\\HA.Product.Dtos\\ProductModule\\UpdateBrandDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "DocumentIndex": 29,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:57:10.894Z"
+              "WhenOpened": "2024-11-28T16:31:12.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\OrderService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\OrderService.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\OrderService.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAAALEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:31:12.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IPaymentService.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IPaymentService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:31:09.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDiscountService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IDiscountService.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IDiscountService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IDiscountService.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Abstract\\IDiscountService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:31:08.343Z",
+              "EditorCaption": ""
             }
           ]
         }

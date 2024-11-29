@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HA.Auth.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27154983f93fbfa8e29869e0b32b91e0a4ce79f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa10c6fab720c5508939b5dbcfed774a7dcbff73")]
 [assembly: System.Reflection.AssemblyProductAttribute("HA.Auth.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HA.Auth.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -93,20 +93,20 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
         }
         public void AddProductImage(ProductImage input)
         {
-            foreach (var productId in input.ProductIds)
+            foreach (var imageId in input.ImageIds)
             {
-                var productFind = _dbContext.ProductImages.FirstOrDefault(s =>
-                s.ProductId == productId && s.ImageId == input.ImageId);
+                var imageFind = _dbContext.ProductImages.FirstOrDefault(s =>
+                s.ImageId == imageId && s.ProductId == input.ProductId);
 
-                if (productFind != null)
+                if (imageFind != null)
                 {
                     continue;
                 }
                 _dbContext.ProductImages.Add(
                     new ProdProductImage
                     {
-                        ProductId = productId,
-                        ImageId = input.ImageId,
+                        ImageId = imageId,
+                        ProductId = input.ProductId,
                     });
                 _dbContext.SaveChanges();
             }

@@ -171,7 +171,7 @@ namespace HA.WebAPI.Controllers.Product
         {
             try
             {
-                if (input == null || input.ProductIds == null || !input.ProductIds.Any())
+                if (input == null || input.ImageIds == null || !input.ImageIds.Any())
                 {
                     return BadRequest(new { Message = "Invalid input data." });
                 }

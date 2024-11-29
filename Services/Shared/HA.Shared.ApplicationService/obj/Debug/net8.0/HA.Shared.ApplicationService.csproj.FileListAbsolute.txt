@@ -5,6 +5,7 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.Applica
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\HA.Shared.ApplicationService.AssemblyInfoInputs.cache
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\HA.Shared.ApplicationService.AssemblyInfo.cs
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\HA.Shared.ApplicationService.csproj.CoreCompileInputs.cache
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\HA.Shared.ApplicationService.sourcelink.json
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\HA.Shared.ApplicationService.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\refint\HA.Shared.ApplicationService.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Shared\HA.Shared.ApplicationService\obj\Debug\net8.0\HA.Shared.ApplicationService.pdb

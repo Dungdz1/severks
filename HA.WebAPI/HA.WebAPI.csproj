@@ -12,12 +12,18 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Services\Auth\HA.Auth.ApplicationService\HA.Auth.ApplicationService.csproj" />
     <ProjectReference Include="..\Services\Auth\HA.Auth.Dtos\HA.Auth.Dtos.csproj" />
+    <ProjectReference Include="..\Services\Order\HA.Order.ApplicationService\HA.Order.ApplicationService.csproj" />
+    <ProjectReference Include="..\Services\Order\HA.Order.Dtos\HA.Order.Dtos.csproj" />
     <ProjectReference Include="..\Services\Product\HA.Product.ApplicationService\HA.Product.ApplicationService.csproj" />
     <ProjectReference Include="..\Services\Product\HA.Product.Dtos\HA.Product.Dtos.csproj" />
   </ItemGroup>

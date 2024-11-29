@@ -10,10 +10,13 @@
         "dependencies": {
           "HA.Auth.ApplicationService": "1.0.0",
           "HA.Auth.Dtos": "1.0.0",
+          "HA.Order.ApplicationService": "1.0.0",
+          "HA.Order.Dtos": "1.0.0",
           "HA.Product.ApplicationService": "1.0.0",
           "HA.Product.Dtos": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.EntityFrameworkCore.Design": "8.0.10",
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.10",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -423,6 +426,11 @@
             "assemblyVersion": "8.0.10.0",
             "fileVersion": "8.0.1024.46708"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/8.0.10": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "8.0.10"
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -967,6 +975,43 @@
           "HA.Constan.dll": {}
         }
       },
+      "HA.Order.ApplicationService/1.0.0": {
+        "dependencies": {
+          "HA.Constan": "1.0.0",
+          "HA.Order.Dtos": "1.0.0",
+          "HA.Order.Infrastructure": "1.0.0",
+          "HA.Product.Dtos": "1.0.0",
+          "HA.Shared.ApplicationService": "1.0.0"
+        },
+        "runtime": {
+          "HA.Order.ApplicationService.dll": {}
+        }
+      },
+      "HA.Order.Domain/1.0.0": {
+        "dependencies": {
+          "HA.Constan": "1.0.0"
+        },
+        "runtime": {
+          "HA.Order.Domain.dll": {}
+        }
+      },
+      "HA.Order.Dtos/1.0.0": {
+        "runtime": {
+          "HA.Order.Dtos.dll": {}
+        }
+      },
+      "HA.Order.Infrastructure/1.0.0": {
+        "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
+          "HA.Order.Domain": "1.0.0",
+          "HA.Product.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
+        },
+        "runtime": {
+          "HA.Order.Infrastructure.dll": {}
+        }
+      },
       "HA.Product.ApplicationService/1.0.0": {
         "dependencies": {
           "HA.Constan": "1.0.0",
@@ -1141,6 +1186,13 @@
       "sha512": "sha512-DvhBEk44UjWMebFKwIFDIdEsG8gzbgflWIZljDCpIkZVpId+PKs0ufzJxnTQ94InPO+pS7+wE45cRsPRt9B0Iw==",
       "path": "microsoft.entityframeworkcore.sqlserver/8.0.10",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.8.0.10.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/8.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aaimNUjkJDHdZb2hxd6hjwz7OdeankbQHPx8/b+qCfVfaEpOAIW0LTBge4qG+AUKacKfcoK7GJq6ACjenEvPLQ==",
+      "path": "microsoft.entityframeworkcore.tools/8.0.10",
+      "hashPath": "microsoft.entityframeworkcore.tools.8.0.10.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -1576,6 +1628,26 @@
       "sha512": ""
     },
     "HA.Constan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Order.ApplicationService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Order.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Order.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Order.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,6 +1,7 @@
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.ApplicationService.deps.json
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.ApplicationService.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.ApplicationService.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Auth.Domain.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Constan.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.Domain.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.Dtos.dll
@@ -10,6 +11,7 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Appli
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Shared.ApplicationService.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.Dtos.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.Infrastructure.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Auth.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Product.Domain.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\obj\Debug\net8.0\HA.Product.ApplicationService.csproj.AssemblyReference.cache
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\obj\Debug\net8.0\HA.Product.ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,5 +24,3 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.Appli
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\obj\Debug\net8.0\refint\HA.Product.ApplicationService.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\obj\Debug\net8.0\HA.Product.ApplicationService.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\obj\Debug\net8.0\ref\HA.Product.ApplicationService.dll
-C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Auth.Domain.dll
-C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Product\HA.Product.ApplicationService\bin\Debug\net8.0\HA.Auth.Domain.pdb

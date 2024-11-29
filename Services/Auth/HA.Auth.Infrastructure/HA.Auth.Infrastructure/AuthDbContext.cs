@@ -21,6 +21,8 @@ namespace HA.Auth.Infrastructure
         public DbSet<AuthPermissions> Permissions { get; set; }
         public DbSet<AuthUserRoles> UserRoles { get; set; }
         public DbSet<AuthUserPermissions> UserPermissions { get; set; }
+        public DbSet<AuthAddress> Addresses { get; set; }
+        public DbSet<AuthAddressUser> AddressesUsers { get; set; }
 
         public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options) { }
 
@@ -68,6 +70,19 @@ namespace HA.Auth.Infrastructure
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
+                .Entity<AuthAddressUser>()
+                .HasOne<AuthUser>()
+                .WithMany()
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder
+                .Entity<AuthAddressUser>()
+                .HasOne<AuthAddress>()
+                .WithMany()
+                .HasForeignKey(e => e.AddressId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder
                 .Entity<AuthUser>()
                 .HasKey(e => e.Id);
 
@@ -81,6 +96,10 @@ namespace HA.Auth.Infrastructure
 
             modelBuilder
                 .Entity<AuthUserPermissions>()
+                .HasKey(e => e.Id);
+
+            modelBuilder
+                .Entity<AuthAddress>()
                 .HasKey(e => e.Id);
             base.OnModelCreating(modelBuilder);
 

@@ -7,10 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Product\HA.Product.Dtos\HA.Product.Dtos.csproj" />
     <ProjectReference Include="..\..\Shared\HA.Auth.Constan\HA.Constan.csproj" />
     <ProjectReference Include="..\..\Shared\HA.Shared.ApplicationService\HA.Shared.ApplicationService.csproj" />
     <ProjectReference Include="..\HA.Order.Dtos\HA.Order.Dtos.csproj" />
     <ProjectReference Include="..\HA.Order.Infrastructure\HA.Order.Infrastructure.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
 </Project>

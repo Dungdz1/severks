@@ -28,6 +28,8 @@ namespace HA.Product.Infrastructure
         public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AuthUser>()
+            .ToTable("AuthUser", schema: "ProductSchema");
             modelBuilder
                 .Entity<ProdProductCategory>()
                 .HasOne<ProdProduct>()

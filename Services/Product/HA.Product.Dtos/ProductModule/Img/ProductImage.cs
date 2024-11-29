@@ -8,7 +8,7 @@ namespace HA.Product.Dtos.ProductModule.Img
 {
     public class ProductImage
     {
-        public int ImageId { get; set; }
-        public List<int> ProductIds { get; set; }
+        public int ProductId { get; set; }
+        public List<int> ImageIds { get; set; }
     }
 }
