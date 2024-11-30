@@ -28,7 +28,6 @@ namespace HA.Order.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            // Cấu hình bảng AuthUser cho OrderDbContext
             modelBuilder.Entity<AuthUser>()
                 .ToTable("AuthUser", schema: "OrderSchema");
             modelBuilder
@@ -46,14 +45,14 @@ namespace HA.Order.Infrastructure
 
             modelBuilder
                 .Entity<OrderUser>()
-                .HasOne<OdOrder>() // Quan hệ giữa OrderUser và OdOrder
+                .HasOne<OdOrder>()
                 .WithMany()
                 .HasForeignKey(e => e.OrderId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
                 .Entity<OrderUser>()
-                .HasOne<AuthUser>() // Quan hệ giữa OrderUser và AuthUser
+                .HasOne<AuthUser>()
                 .WithMany()
                 .HasForeignKey(e => e.UserId)
                 .OnDelete(DeleteBehavior.Restrict);

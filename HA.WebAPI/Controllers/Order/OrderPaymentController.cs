@@ -15,6 +15,7 @@ namespace HA.WebAPI.Controllers.Order
         {
             _paymentService = paymentService;
         }
+        [HttpPost("CreateNewPayment")]
         public IActionResult CreatePayment([FromBody] CreatePaymentDto input)
         {
             var discount = _paymentService.CreatePayment(input);

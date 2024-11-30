@@ -17,6 +17,7 @@ namespace HA.WebAPI.Controllers.Order
         {
             _discountService = discountService;
         }
+        [HttpPost("CreateDiscount")]
         public IActionResult CreateDiscount([FromBody] CreateDiscountDto input)
         {
             var discount = _discountService.CreateNewDiscount(input);
