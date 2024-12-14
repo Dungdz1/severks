@@ -41,6 +41,7 @@ namespace HA.Product.ApplicationService.Startup
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddScoped<ITypeService, TypeService>();
+            builder.Services.AddScoped<IImageService, ImageService>();
         }
     }
 }

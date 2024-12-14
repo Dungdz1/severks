@@ -1594,6 +1594,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "HA.Auth.Domain": "1.0.0",
+          "HA.Product.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
         },
@@ -1722,8 +1723,9 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "HA.Auth.Domain": "1.0.0",
+          "HA.Order.Domain": "1.0.0",
           "HA.Product.Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
         "compile": {
@@ -1736,12 +1738,40 @@
       "HA.Shared.ApplicationService/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
+          "HA.Constan": "1.0.0",
+          "HA.Order.Domain": "1.0.0",
+          "HA.Product.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
+        },
         "compile": {
           "bin/placeholder/HA.Shared.ApplicationService.dll": {}
         },
         "runtime": {
           "bin/placeholder/HA.Shared.ApplicationService.dll": {}
         }
+      },
+      "HA.Shared.Connects/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HA.Auth.ApplicationService": "1.0.0",
+          "HA.Constan": "1.0.0",
+          "HA.Order.ApplicationService": "1.0.0",
+          "HA.Product.ApplicationService": "1.0.0",
+          "HA.Shared.ApplicationService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HA.Shared.Connects.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HA.Shared.Connects.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -4433,6 +4463,11 @@
       "type": "project",
       "path": "../Services/Shared/HA.Shared.ApplicationService/HA.Shared.ApplicationService.csproj",
       "msbuildProject": "../Services/Shared/HA.Shared.ApplicationService/HA.Shared.ApplicationService.csproj"
+    },
+    "HA.Shared.Connects/1.0.0": {
+      "type": "project",
+      "path": "../Services/Shared/HA.Shared.Connects/HA.Shared.Connects.csproj",
+      "msbuildProject": "../Services/Shared/HA.Shared.Connects/HA.Shared.Connects.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4443,6 +4478,7 @@
       "HA.Order.Dtos >= 1.0.0",
       "HA.Product.ApplicationService >= 1.0.0",
       "HA.Product.Dtos >= 1.0.0",
+      "HA.Shared.Connects >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
@@ -4498,6 +4534,9 @@
             },
             "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj": {
               "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Dtos\\HA.Product.Dtos.csproj"
+            },
+            "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.Connects\\HA.Shared.Connects.csproj": {
+              "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.Connects\\HA.Shared.Connects.csproj"
             }
           }
         }

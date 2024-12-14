@@ -3,6 +3,7 @@ using HA.Product.ApplicationService.ProductModule.Abstracts;
 using HA.Product.Domain;
 using HA.Product.Dtos.ProductModule;
 using HA.Product.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
 {
     public class ProductSearchService : ProductServiceBase, IProductSearchService
     {
-        public ProductSearchService(ILogger<ProductSearchService> logger, ProductDbContext dbContext)
+        public ProductSearchService(ILogger<ProductSearchService> logger, BasethDbContext dbContext)
             : base(logger, dbContext)
         {
         }

@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Product\HA.Product.Domain\HA.Product.Domain.csproj" />
     <ProjectReference Include="..\..\HA.Auth.Domain\HA.Auth.Domain.csproj" />
   </ItemGroup>
 

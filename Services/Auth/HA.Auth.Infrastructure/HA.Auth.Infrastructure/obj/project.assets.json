@@ -1518,6 +1518,20 @@
         "runtime": {
           "bin/placeholder/HA.Constan.dll": {}
         }
+      },
+      "HA.Product.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
+          "HA.Constan": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HA.Product.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HA.Product.Domain.dll": {}
+        }
       }
     }
   },
@@ -4063,11 +4077,17 @@
       "type": "project",
       "path": "../../../Shared/HA.Auth.Constan/HA.Constan.csproj",
       "msbuildProject": "../../../Shared/HA.Auth.Constan/HA.Constan.csproj"
+    },
+    "HA.Product.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../Product/HA.Product.Domain/HA.Product.Domain.csproj",
+      "msbuildProject": "../../../Product/HA.Product.Domain/HA.Product.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "HA.Auth.Domain >= 1.0.0",
+      "HA.Product.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10"
@@ -4107,6 +4127,9 @@
           "projectReferences": {
             "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj": {
               "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.Domain\\HA.Auth.Domain.csproj"
+            },
+            "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj": {
+              "projectPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.Domain\\HA.Product.Domain.csproj"
             }
           }
         }

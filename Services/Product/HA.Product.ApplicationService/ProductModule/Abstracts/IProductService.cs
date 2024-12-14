@@ -30,6 +30,6 @@ namespace HA.Product.ApplicationService.ProductModule.Abstracts
         void AddProductSale(ProductSale input);
         List<ProductDto> GetAllProductSale(int saleId);
         void AddProducttoCart(AddtoCart input);
-        List<ProductDto> GetAllProductToCart(int userId);
+        List<ProductDto> GetAllProductToCart(int customerId);
     }
 }

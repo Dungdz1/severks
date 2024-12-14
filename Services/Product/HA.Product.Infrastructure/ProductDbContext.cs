@@ -1,4 +1,5 @@
-﻿using HA.Auth.Domain;
+﻿using HA.Auth.Constan.Database;
+using HA.Auth.Domain;
 using HA.Product.Domain;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -20,16 +21,14 @@ namespace HA.Product.Infrastructure
         public DbSet<ProdProductType> ProductTypes { get; set; }
         public DbSet<ProdImage> Images { get; set; }
         public DbSet<ProdProductImage> ProductImages { get; set; }
-        public DbSet<ProdProductSale> ProductSales { get; set; }
-        public DbSet<ProdSale> Sales { get; set; }
-
+        public DbSet<ProdSale> ProductSales { get; set; }
         public DbSet<ProdCart> ProductCarts { get; set; }
-
         public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AuthUser>()
-            .ToTable("AuthUser", schema: "ProductSchema");
+            modelBuilder.Entity<ProdProduct>().ToTable("Products");
+            modelBuilder.Entity<ProdSale>().ToTable("ProdSales");
+
             modelBuilder
                 .Entity<ProdProductCategory>()
                 .HasOne<ProdProduct>()
@@ -83,30 +82,26 @@ namespace HA.Product.Infrastructure
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
-                .Entity<ProdProductSale>()
+                .Entity<ProdSale>()
                 .HasOne<ProdProduct>()
                 .WithMany()
-                .HasForeignKey(e => e.ProductId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(e => e.ProductId);
             modelBuilder
-                .Entity<ProdProductSale>()
-                .HasOne<ProdSale>()
+                .Entity<ProdSale>()
+                .HasOne<AuthSale>()
                 .WithMany()
-                .HasForeignKey(e => e.SaleId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(e => e.SaleId);
 
             modelBuilder
                 .Entity<ProdCart>()
                 .HasOne<ProdProduct>()
                 .WithMany()
-                .HasForeignKey(e => e.ProductId)
-                .OnDelete(DeleteBehavior.Restrict);
-            modelBuilder
-                .Entity<ProdCart>()
-                .HasOne<AuthUser>()
-                .WithOne()
-                .HasForeignKey<ProdCart>(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(e => e.ProductId);
+
+            modelBuilder.Entity<ProdCart>()
+                .HasOne<AuthCustomer>()
+                .WithMany()
+                .HasForeignKey(e => e.CustomerId);
         }
     }
 }

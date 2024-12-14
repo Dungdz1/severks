@@ -12,7 +12,7 @@ namespace HA.Auth.ApplicationService.UserModule.Abstract
 {
     public interface IUserService
     {
-        Task<AuthUser> CreateUserAsync(CreateUserDto input);
+        UserDto CreateNewUser(CreateUserDto input);
         List<AuthUser> GetAll();
         void UpdateUser(UpdateUserDto input);
         void DeleteUser(int id);

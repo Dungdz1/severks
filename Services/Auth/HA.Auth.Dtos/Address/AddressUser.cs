@@ -8,7 +8,7 @@ namespace HA.Auth.Dtos.Address
 {
     public class AddressUser
     {
-        public int UserId { get; set; }
+        public int CustomerId { get; set; }
         public List<int> AddressIds { get; set; }
     }
 }

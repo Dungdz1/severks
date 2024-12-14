@@ -12,16 +12,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HA.Product.Dtos.ProductModule.Type;
+using HA.Shared.ApplicationService;
 
 namespace HA.Product.ApplicationService.ProductModule.Implement
 {
     public class TypeService : ProductServiceBase, ITypeService
     {
         private readonly ILogger<TypeService> _logger;
-        private readonly ProductDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
 
-        public TypeService(ILogger<TypeService> logger, ProductDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public TypeService(ILogger<TypeService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

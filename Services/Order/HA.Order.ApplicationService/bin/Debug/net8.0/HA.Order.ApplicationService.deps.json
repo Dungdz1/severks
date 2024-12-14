@@ -560,6 +560,14 @@
         }
       },
       "HA.Shared.ApplicationService/1.0.0": {
+        "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
+          "HA.Constan": "1.0.0",
+          "HA.Order.Domain": "1.0.0",
+          "HA.Product.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
+        },
         "runtime": {
           "HA.Shared.ApplicationService.dll": {}
         }

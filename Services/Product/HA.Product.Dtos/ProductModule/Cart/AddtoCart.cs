@@ -8,7 +8,7 @@ namespace HA.Product.Dtos.ProductModule.Cart
 {
     public class AddtoCart
     {
-        public int UserId { get; set; }
+        public int CustomerId { get; set; }
         public List<int> ProductIds { get; set; }
         public int Quantity { get; set;}
     }

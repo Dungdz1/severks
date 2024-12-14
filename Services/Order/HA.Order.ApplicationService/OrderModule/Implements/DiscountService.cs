@@ -12,15 +12,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using HA.Order.Infrastructure;
 using HA.Order.Domain;
+using HA.Shared.ApplicationService;
 
 namespace HA.Order.ApplicationService.OrderModule.Implements
 {
     public class DiscountService : OrderServiceBase, IDiscountService
     {
         private readonly ILogger<DiscountService> _logger;
-        private readonly OrderDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public DiscountService(ILogger<DiscountService> logger, OrderDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public DiscountService(ILogger<DiscountService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

@@ -23,39 +23,36 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
     public class UserService : AuthServiceBase, IUserService
     {
         private readonly ILogger<UserService> _logger;
-        private readonly AuthDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public UserService(ILogger<UserService> logger, AuthDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public UserService(ILogger<UserService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;
             _configuration = configuration;
         }
 
-        public async Task<AuthUser> CreateUserAsync(CreateUserDto input)
+        public UserDto CreateNewUser(CreateUserDto input)
         {
             var user = new AuthUser
             {
                 UserName = input.UserName,
                 Password = input.Password,
                 PhoneNumber = input.PhoneNumber,
-                Address = input.Address,
                 CreatedDate = DateTime.UtcNow,
             };
             _dbContext.Users.Add(user);
-            await _dbContext.SaveChangesAsync();
+            _dbContext.SaveChanges();
 
             _logger.LogInformation($"User {input.UserName} created successfully.");
 
-            return new AuthUser
+            return new UserDto
             {
                 UserName = user.UserName,
                 Password = user.Password,
                 PhoneNumber = user.PhoneNumber,
-                Address = user.Address,
                 CreatedDate = DateTime.UtcNow,
             };
-
         }
 
         public void DeleteUser(int id)
@@ -72,7 +69,6 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
                 Id = s.Id,
                 UserName = s.UserName,
                 PhoneNumber = s.PhoneNumber,
-                Address = s.Address
             });
 
             return result.ToList();
@@ -84,7 +80,6 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
             userFind.UserName = input.UserName;
             userFind.Password = input.Password;
             userFind.PhoneNumber = input.PhoneNumber;
-            userFind.Address = input.Address;
             userFind.CreatedDate = DateTime.UtcNow;
 
             _dbContext.SaveChanges();
@@ -134,7 +129,7 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
             foreach (var addressId in input.AddressIds)
             {
                 var addressFind = _dbContext.AddressesUsers.FirstOrDefault(s =>
-                s.AddressId == addressId && s.UserId == input.UserId);
+                s.AddressId == addressId && s.CustomerId == input.CustomerId);
 
                 if (addressFind != null)
                 {
@@ -144,7 +139,7 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
                     new AuthAddressUser
                     {
                         AddressId = addressId,
-                        UserId = input.UserId,
+                        CustomerId = input.CustomerId,
                     });
                 _dbContext.SaveChanges();
             }

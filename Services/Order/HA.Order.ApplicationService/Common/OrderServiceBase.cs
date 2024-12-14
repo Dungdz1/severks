@@ -1,5 +1,6 @@
 ﻿using HA.Order.Domain;
 using HA.Order.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,9 @@ namespace HA.Order.ApplicationService.Common
     public abstract class OrderServiceBase
     {
         protected readonly ILogger _logger;
-        protected readonly OrderDbContext _dbContext;
+        protected readonly BasethDbContext _dbContext;
 
-        protected OrderServiceBase(ILogger logger, OrderDbContext dbContext)
+        protected OrderServiceBase(ILogger logger, BasethDbContext dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

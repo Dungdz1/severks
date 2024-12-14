@@ -11,6 +11,7 @@ using HA.Order.Infrastructure;
 using HA.Product.Domain;
 using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Cart;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -24,9 +25,9 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
     public class OrderService : OrderServiceBase, IOrderService
     {
         private readonly ILogger<OrderService> _logger;
-        private readonly OrderDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public OrderService(ILogger<OrderService> logger, OrderDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public OrderService(ILogger<OrderService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;
@@ -98,19 +99,15 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
 
         public void NewUserOrder(UserOrder input)
         {
-            foreach (var orderId in input.OrderIds)
-            {
-                var orderFind = _dbContext.OrderUsers.FirstOrDefault(s =>
-                s.OrderId == orderId && s.UserId == input.UserId);
+            var orderFind = _dbContext.OrderUsers.FirstOrDefault(s =>
+        s.OrderId == input.OrderIds && s.UserId == input.UserId);
 
-                if (orderFind != null)
-                {
-                    continue;
-                }
+            if (orderFind == null)
+            {
                 _dbContext.OrderUsers.Add(
                     new OrderUser
                     {
-                        OrderId = orderId,
+                        OrderId = input.OrderIds,
                         UserId = input.UserId,
                     });
                 _dbContext.SaveChanges();
@@ -170,19 +167,15 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
 
         public void AddDelivery(DeliveryDto input)
         {
-            foreach (var orderId in input.OrderIds)
-            {
-                var orderFind = _dbContext.Deliverys.FirstOrDefault(s =>
-                s.OrderId == orderId && s.AddressId == input.AddressId);
+            var orderFind = _dbContext.Deliverys.FirstOrDefault(s =>
+            s.OrderId == input.OrderIds && s.AddressId == input.AddressId);
 
-                if (orderFind != null)
-                {
-                    continue;
-                }
+            if (orderFind == null)
+            {
                 _dbContext.Deliverys.Add(
                     new OdDelivery
                     {
-                        OrderId = orderId,
+                        OrderId = input.OrderIds,
                         AddressId = input.AddressId,
                     });
                 _dbContext.SaveChanges();

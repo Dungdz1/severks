@@ -18,3 +18,5 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Infrastruct
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Infrastructure\HA.Auth.Infrastructure\obj\Debug\net8.0\HA.Auth.Infrastructure.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Infrastructure\HA.Auth.Infrastructure\obj\Debug\net8.0\HA.Auth.Infrastructure.genruntimeconfig.cache
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Infrastructure\HA.Auth.Infrastructure\obj\Debug\net8.0\ref\HA.Auth.Infrastructure.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Infrastructure\HA.Auth.Infrastructure\bin\Debug\net8.0\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Infrastructure\HA.Auth.Infrastructure\bin\Debug\net8.0\HA.Product.Domain.pdb

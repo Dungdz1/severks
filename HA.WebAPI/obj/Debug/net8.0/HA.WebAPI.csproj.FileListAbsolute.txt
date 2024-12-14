@@ -173,3 +173,5 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\obj\Debug\net8.0\refint
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\obj\Debug\net8.0\HA.WebAPI.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\obj\Debug\net8.0\HA.WebAPI.genruntimeconfig.cache
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\obj\Debug\net8.0\ref\HA.WebAPI.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\bin\Debug\net8.0\HA.Shared.Connects.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\bin\Debug\net8.0\HA.Shared.Connects.pdb

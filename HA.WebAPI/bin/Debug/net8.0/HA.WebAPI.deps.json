@@ -14,6 +14,7 @@
           "HA.Order.Dtos": "1.0.0",
           "HA.Product.ApplicationService": "1.0.0",
           "HA.Product.Dtos": "1.0.0",
+          "HA.Shared.Connects": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.10",
           "Microsoft.EntityFrameworkCore.Design": "8.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.10",
@@ -963,6 +964,7 @@
       "HA.Auth.Infrastructure/1.0.0": {
         "dependencies": {
           "HA.Auth.Domain": "1.0.0",
+          "HA.Product.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
         },
@@ -1040,6 +1042,7 @@
       "HA.Product.Infrastructure/1.0.0": {
         "dependencies": {
           "HA.Auth.Domain": "1.0.0",
+          "HA.Order.Domain": "1.0.0",
           "HA.Product.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
@@ -1049,8 +1052,28 @@
         }
       },
       "HA.Shared.ApplicationService/1.0.0": {
+        "dependencies": {
+          "HA.Auth.Domain": "1.0.0",
+          "HA.Constan": "1.0.0",
+          "HA.Order.Domain": "1.0.0",
+          "HA.Product.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
+        },
         "runtime": {
           "HA.Shared.ApplicationService.dll": {}
+        }
+      },
+      "HA.Shared.Connects/1.0.0": {
+        "dependencies": {
+          "HA.Auth.ApplicationService": "1.0.0",
+          "HA.Constan": "1.0.0",
+          "HA.Order.ApplicationService": "1.0.0",
+          "HA.Product.ApplicationService": "1.0.0",
+          "HA.Shared.ApplicationService": "1.0.0"
+        },
+        "runtime": {
+          "HA.Shared.Connects.dll": {}
         }
       }
     }
@@ -1673,6 +1696,11 @@
       "sha512": ""
     },
     "HA.Shared.ApplicationService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HA.Shared.Connects/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

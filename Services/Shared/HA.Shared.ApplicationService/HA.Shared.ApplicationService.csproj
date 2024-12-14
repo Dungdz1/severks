@@ -5,5 +5,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Auth\HA.Auth.Domain\HA.Auth.Domain.csproj" />
+	  <ProjectReference Include="..\..\Order\HA.Order.Domain\HA.Order.Domain.csproj" />
+	  <ProjectReference Include="..\..\Product\HA.Product.Domain\HA.Product.Domain.csproj" />
+	  <ProjectReference Include="..\HA.Auth.Constan\HA.Constan.csproj" />
+	</ItemGroup>
 
 </Project>

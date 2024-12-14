@@ -20,7 +20,7 @@ namespace HA.Auth.ApplicationService.Startup
     {
         public static void ConfigureAuth(this WebApplicationBuilder builder, string? assemblyName)
         {
-            builder.Services.AddDbContext<AuthDbContext>(
+            builder.Services.AddDbContext<BasethDbContext>(
                 options =>
                 {
                     options.UseSqlServer(
@@ -38,10 +38,11 @@ namespace HA.Auth.ApplicationService.Startup
                 ServiceLifetime.Scoped
             );
             //triển khai nốt các interface và service
-            builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IUserRole, UserRoleService>();
-            builder.Services.AddScoped<IUserPermission, UserPermissionService>();
-            builder.Services.AddScoped<IAddressService, AddressService>();
+            builder.Services.AddScoped<ISaleService, SaleService>();
+            //builder.Services.AddScoped<IUserService, UserService>();
+            //builder.Services.AddScoped<IUserRole, UserRoleService>();
+            //builder.Services.AddScoped<IUserPermission, UserPermissionService>();
+            //builder.Services.AddScoped<IAddressService, AddressService>();
         }
     }
 }

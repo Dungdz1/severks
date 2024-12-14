@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using HA.Product.ApplicationService.Startup;
 using HA.Order.ApplicationService.Startup;
+using HA.Shared.Connects.Startup;
 
 namespace HA.WebAPI
 {
@@ -24,9 +25,7 @@ namespace HA.WebAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.ConfigureAuth(typeof(Program).Namespace);
-            builder.ConfigureProduct(typeof(Program).Namespace);
-            builder.ConfigureOrder(typeof(Program).Namespace);
+            builder.ConfigureBaseth(typeof(Program).Namespace);
 
             var app = builder.Build();
 
@@ -65,30 +64,6 @@ namespace HA.WebAPI
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
                     };
                 });
-        }
-
-            private void SeedData(AuthDbContext context)
-        {
-            if (!context.Role.Any())
-            {
-                context.Role.AddRange(
-                    new AuthRole { Id = 1, RoleName = "Admin", RoleDescription = "Administrator Role" },
-                    new AuthRole { Id = 2, RoleName = "Employee", RoleDescription = "Employee Role" },
-                    new AuthRole { Id = 3, RoleName = "Customer", RoleDescription = "Customer"}
-                );
-                context.SaveChanges();
-            }
-
-            if (!context.Permissions.Any())
-            {
-                context.Permissions.AddRange(
-                    new AuthPermissions { Id = 1, PermissionName = "Create", PermissionDescription = "Create permission" },
-                    new AuthPermissions { Id = 2, PermissionName = "Read", PermissionDescription = "Read permission" },
-                    new AuthPermissions { Id = 3, PermissionName = "Update", PermissionDescription = "Update permission" },
-                    new AuthPermissions { Id = 4, PermissionName = "Delete", PermissionDescription = "Delete permission" }
-                );
-                context.SaveChanges();
-            }
         }
     }
 }

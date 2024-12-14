@@ -3,26 +3,70 @@
   "WorkspaceRootPath": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\order\\orderpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\order\\orderpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.domain\\odpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{362A6F2E-0978-4447-9039-C2635B63BABC}|Services\\Order\\HA.Order.Domain\\HA.Order.Domain.csproj|solutionrelative:services\\order\\ha.order.domain\\odpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\order\\orderdiscountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\order\\orderdiscountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241214160622_fullnon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HA.WebAPI\\Migrations\\20241214160622_fullnon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\controllers\\order\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\controllers\\order\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\ha.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{141EF1DA-873E-4340-B447-28D0347215DB}|HA.WebAPI\\HA.WebAPI.csproj|solutionrelative:ha.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\order\\ha.order.applicationservice\\ordermodule\\implements\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC4B8319-65C2-4CC0-99DD-BCC31C5F6EF9}|Services\\Order\\HA.Order.ApplicationService\\HA.Order.ApplicationService.csproj|solutionrelative:services\\order\\ha.order.applicationservice\\ordermodule\\implements\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37036EC5-5165-4D4D-BEA8-23CBCD10E978}|Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\shared\\ha.shared.applicationservice\\basethdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37036EC5-5165-4D4D-BEA8-23CBCD10E978}|Services\\Shared\\HA.Shared.ApplicationService\\HA.Shared.ApplicationService.csproj|solutionrelative:services\\shared\\ha.shared.applicationservice\\basethdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\addressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\addressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3BC3C6-57A1-4B50-AD1D-BCCADC134ACA}|Services\\Shared\\HA.Shared.Connects\\HA.Shared.Connects.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\shared\\ha.shared.connects\\startup\\basethstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3BC3C6-57A1-4B50-AD1D-BCCADC134ACA}|Services\\Shared\\HA.Shared.Connects\\HA.Shared.Connects.csproj|solutionrelative:services\\shared\\ha.shared.connects\\startup\\basethstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\product\\ha.product.applicationservice\\startup\\productstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E2B92E-7607-4EF7-A926-8FFCD7DACAE4}|Services\\Product\\HA.Product.ApplicationService\\HA.Product.ApplicationService.csproj|solutionrelative:services\\product\\ha.product.applicationservice\\startup\\productstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\userpermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\userpermissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|c:\\users\\dung0\\onedrive\\documents\\dn\\ha.webapi\\services\\auth\\ha.auth.applicationservice\\usermodule\\abstract\\iaddressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F82C84-1C92-474D-84BB-6E147153BE04}|Services\\Auth\\HA.Auth.ApplicationService\\HA.Auth.ApplicationService.csproj|solutionrelative:services\\auth\\ha.auth.applicationservice\\usermodule\\abstract\\iaddressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 129,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -31,51 +75,197 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderPaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
-              "RelativeToolTip": "HA.WebAPI\\Controllers\\Order\\OrderPaymentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABAAAAA",
+              "Title": "OdPayment.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.Domain\\OdPayment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:33:38.031Z",
+              "WhenOpened": "2024-12-14T16:07:30.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderDiscountController.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
-              "RelativeToolTip": "HA.WebAPI\\Controllers\\Order\\OrderDiscountController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Title": "20241214160622_fullnon.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241214160622_fullnon.cs",
+              "RelativeDocumentMoniker": "HA.WebAPI\\Migrations\\20241214160622_fullnon.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Migrations\\20241214160622_fullnon.cs",
+              "RelativeToolTip": "HA.WebAPI\\Migrations\\20241214160622_fullnon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:32:26.572Z"
+              "WhenOpened": "2024-12-14T16:06:22.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderController.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Controllers\\Order\\OrderController.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Controllers\\Order\\OrderController.cs",
-              "RelativeToolTip": "HA.WebAPI\\Controllers\\Order\\OrderController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:31:07.873Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "HA.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\appsettings.json",
+              "RelativeToolTip": "HA.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAACAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T16:05:55.37Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "HA.WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\Program.cs",
-              "RelativeToolTip": "HA.WebAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "RelativeToolTip": "Services\\Order\\HA.Order.ApplicationService\\OrderModule\\Implements\\PaymentService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABYAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:28:00.439Z"
+              "WhenOpened": "2024-12-14T16:05:14.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BasethDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\BasethDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\HA.Shared.ApplicationService\\BasethDbContext.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.ApplicationService\\BasethDbContext.cs",
+              "RelativeToolTip": "Services\\Shared\\HA.Shared.ApplicationService\\BasethDbContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:04:47.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BasethStartup.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.Connects\\Startup\\BasethStartup.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\HA.Shared.Connects\\Startup\\BasethStartup.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Shared\\HA.Shared.Connects\\Startup\\BasethStartup.cs",
+              "RelativeToolTip": "Services\\Shared\\HA.Shared.Connects\\Startup\\BasethStartup.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwCgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:48:26.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductStartup.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
+              "RelativeDocumentMoniker": "Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
+              "RelativeToolTip": "Services\\Product\\HA.Product.ApplicationService\\Startup\\ProductStartup.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:43:05.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:23:39.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\Program.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\Program.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:23:37.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserRoleService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserRoleService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserRoleService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserRoleService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABMAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:22:54.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserPermissionService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserPermissionService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserPermissionService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserPermissionService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\UserPermissionService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:22:49.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddressService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\AddressService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowBUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:22:22.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\CustomerService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\CustomerService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:18:22.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\SaleService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\SaleService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\SaleService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Implements\\SaleService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:15:25.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAddressService.cs",
+              "DocumentMoniker": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Abstract\\IAddressService.cs",
+              "RelativeDocumentMoniker": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Abstract\\IAddressService.cs",
+              "ToolTip": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Abstract\\IAddressService.cs",
+              "RelativeToolTip": "Services\\Auth\\HA.Auth.ApplicationService\\UserModule\\Abstract\\IAddressService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:15:12.735Z",
+              "EditorCaption": ""
             }
           ]
         }

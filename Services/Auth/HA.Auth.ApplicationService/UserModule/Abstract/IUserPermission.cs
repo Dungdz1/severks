@@ -10,7 +10,6 @@ namespace HA.Auth.ApplicationService.UserModule.Abstract
     public interface IUserPermission
     {
         //Phan quyen cho user tai day method Add
-        void GrandPermission(GrandPermission input);
 
     }
 }

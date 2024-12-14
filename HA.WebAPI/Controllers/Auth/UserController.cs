@@ -17,9 +17,9 @@ namespace HA.WebAPI.Controllers.Auth
         }
 
         [HttpPost("create_user")]
-        public async Task<IActionResult> CreateUser([FromBody] CreateUserDto input)
+        public IActionResult CreateUser([FromBody] CreateUserDto input)
         {
-            var user = await _userService.CreateUserAsync(input);
+            var user = _userService.CreateNewUser(input);
             return Ok(user);
         }
 

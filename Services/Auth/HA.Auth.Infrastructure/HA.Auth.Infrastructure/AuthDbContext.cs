@@ -11,98 +11,83 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 using System.Data;
+using HA.Product.Domain;
+using HA.Auth.Constan.Database;
 
 namespace HA.Auth.Infrastructure
 {
-    public class AuthDbContext : DbContext
+    public class BasethDbContext : DbContext
     {
         public DbSet<AuthUser> Users { get; set; }
-        public DbSet<AuthRole> Role { get; set; }
         public DbSet<AuthPermissions> Permissions { get; set; }
-        public DbSet<AuthUserRoles> UserRoles { get; set; }
-        public DbSet<AuthUserPermissions> UserPermissions { get; set; }
         public DbSet<AuthAddress> Addresses { get; set; }
         public DbSet<AuthAddressUser> AddressesUsers { get; set; }
+        public DbSet<AuthCustomer> Customers { get; set; }
+        public DbSet<AuthSale> Sales { get; set; }
+        public DbSet<AuthUserSale> SalesUsers { get; set; }
+        public DbSet<AuthPermissionCustomer> CustomersPermissions { get; set; }
+        public DbSet<AuthPermissionSale> SalePermissions { get; set; }
 
-        public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options) { }
+        public BasethDbContext(DbContextOptions<BasethDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.Entity<AuthRole>().HasData(
-                new AuthRole { Id = 1, RoleName = "Admin", RoleDescription = "Administrator Role" },
-                new AuthRole { Id = 2, RoleName = "Employee", RoleDescription = "Employee Role" },
-                new AuthRole { Id = 3, RoleName = "Customer", RoleDescription = "Customer Role"}
-            );
+            modelBuilder.Entity<AuthUser>().ToTable("Users");
+            modelBuilder.Entity<AuthSale>().ToTable("Sales");
 
-            modelBuilder.Entity<AuthPermissions>().HasData(
-                new AuthPermissions { Id = 1, PermissionName = "Create", PermissionDescription = "Create permission" },
-                new AuthPermissions { Id = 2, PermissionName = "Read", PermissionDescription = "Read permission" },
-                new AuthPermissions { Id = 3, PermissionName = "Update", PermissionDescription = "Update permission" },
-                new AuthPermissions { Id = 4, PermissionName = "Delete", PermissionDescription = "Delete permission" }
-            );
-
-            modelBuilder
-                .Entity<AuthUserRoles>()
-                .HasOne<AuthUser>()
-                .WithMany()
-                .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<AuthUserRoles>()
-                .HasOne<AuthRole>()
-                .WithMany()
-                .HasForeignKey(e => e.RoleId)
-                .OnDelete(DeleteBehavior.Restrict);
-            modelBuilder
-                .Entity<AuthUserPermissions>()
-                .HasOne<AuthRole>()
-                .WithMany()
-                .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<AuthUserPermissions>()
-                .HasOne<AuthPermissions>()
-                .WithMany()
-                .HasForeignKey(e => e.PermissionId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<AuthAddressUser>()
-                .HasOne<AuthUser>()
-                .WithMany()
-                .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
             modelBuilder
                 .Entity<AuthAddressUser>()
                 .HasOne<AuthAddress>()
                 .WithMany()
                 .HasForeignKey(e => e.AddressId)
                 .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder
+                .Entity<AuthAddressUser>()
+                .HasOne<AuthCustomer>()
+                .WithMany()
+                .HasForeignKey(e => e.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
-                .Entity<AuthUser>()
-                .HasKey(e => e.Id);
+                .Entity<AuthUserSale>()
+                .HasOne<AuthUser>()
+                .WithMany()
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
-                .Entity<AuthRole>()
-                .HasKey(e => e.Id);
+                .Entity<AuthUserSale>()
+                .HasOne<AuthSale>()
+                .WithMany()
+                .HasForeignKey(e => e.SaleId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
-                .Entity<AuthUserRoles>()
-                .HasKey(e => e.Id);
+                .Entity<AuthCustomerUser>()
+                .HasOne<AuthUser>()
+                .WithMany()
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder
+                .Entity<AuthCustomerUser>()
+                .HasOne<AuthCustomer>()
+                .WithMany()
+                .HasForeignKey(e => e.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
-                .Entity<AuthUserPermissions>()
-                .HasKey(e => e.Id);
+                .Entity<AuthSale>()
+                .HasMany<ProdSale>()
+                .WithOne()
+                .HasForeignKey(e => e.SaleId);
 
             modelBuilder
-                .Entity<AuthAddress>()
-                .HasKey(e => e.Id);
-            base.OnModelCreating(modelBuilder);
-
+                .Entity<ProdCart>()
+                .HasOne<AuthCustomer>()
+                .WithMany()  
+                .HasForeignKey(e => e.CustomerId)  
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 

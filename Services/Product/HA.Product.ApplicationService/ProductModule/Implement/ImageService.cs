@@ -5,6 +5,7 @@ using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Category;
 using HA.Product.Dtos.ProductModule.Img;
 using HA.Product.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -18,10 +19,10 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
     public class ImageService : ProductServiceBase, IImageService
     {
         private readonly ILogger<ImageService> _logger;
-        private readonly ProductDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
 
-        public ImageService(ILogger<ImageService> logger, ProductDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public ImageService(ILogger<ImageService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

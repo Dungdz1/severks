@@ -1,0 +1,2 @@
+tạo thêm 1 bảng của nhân viên bán hàng và 1 bảng bảng của người mua hàng kèm theo các bảng trung gian để liên kết
+fix lỗi kiểu dữ liệu

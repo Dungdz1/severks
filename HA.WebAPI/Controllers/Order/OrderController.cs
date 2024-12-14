@@ -103,7 +103,7 @@ namespace HA.WebAPI.Controllers.Order
         {
             try
             {
-                if (input == null || input.OrderIds == null || !input.OrderIds.Any())
+                if (input == null || input.OrderIds <= 0)
                 {
                     return BadRequest(new { Message = "Invalid input data." });
                 }

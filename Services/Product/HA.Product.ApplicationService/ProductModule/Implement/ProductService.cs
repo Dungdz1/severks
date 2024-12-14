@@ -9,6 +9,7 @@ using HA.Product.Dtos.ProductModule.Img;
 using HA.Product.Dtos.ProductModule.Sale;
 using HA.Product.Dtos.ProductModule.Type;
 using HA.Product.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -22,9 +23,9 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
     public class ProductService : ProductServiceBase, IProductService
     {
         private readonly ILogger<ProductService> _logger;
-        private readonly ProductDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public ProductService(ILogger<ProductService> logger, ProductDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public ProductService(ILogger<ProductService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;
@@ -35,7 +36,7 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             foreach (var productId in input.ProductIds)
             {
                 var productFind = _dbContext.ProductCarts.FirstOrDefault(s =>
-                s.ProductId == productId && s.UserId == input.UserId);
+                s.ProductId == productId && s.CustomerId == input.CustomerId);
 
                 if (productFind != null)
                 {
@@ -45,7 +46,7 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
                     new ProdCart
                     {
                         ProductId = productId,
-                        UserId = input.UserId,
+                        CustomerId = input.CustomerId,
                     });
                 _dbContext.SaveChanges();
             }
@@ -83,7 +84,7 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
                     continue;
                 }
                 _dbContext.ProductSales.Add(
-                    new ProdProductSale
+                    new ProdSale
                     {
                         ProductId = productId,
                         SaleId = input.SaleId,
@@ -237,7 +238,7 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             throw new NotImplementedException();
         }
 
-        public List<ProductDto> GetAllProductToCart(int userId)
+        public List<ProductDto> GetAllProductToCart(int customerId)
         {
             throw new NotImplementedException();
         }

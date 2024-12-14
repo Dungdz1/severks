@@ -1,5 +1,6 @@
 ﻿using HA.Product.Domain;
 using HA.Product.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,9 @@ namespace HA.Product.ApplicationService.Common
     public  abstract class ProductServiceBase
     {
         protected readonly ILogger _logger;
-        protected readonly ProductDbContext _dbContext;
+        protected readonly BasethDbContext _dbContext;
 
-        protected ProductServiceBase(ILogger logger, ProductDbContext dbContext)
+        protected ProductServiceBase(ILogger logger, BasethDbContext dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

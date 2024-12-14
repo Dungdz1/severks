@@ -135,3 +135,7 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.Application
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\obj\Debug\net8.0\HA.Auth.ApplicationService.pdb
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\obj\Debug\net8.0\HA.Auth.ApplicationService.genruntimeconfig.cache
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\obj\Debug\net8.0\ref\HA.Auth.ApplicationService.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\bin\Debug\net8.0\HA.Product.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\bin\Debug\net8.0\HA.Product.Domain.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\bin\Debug\net8.0\HA.Order.Domain.dll
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\Services\Auth\HA.Auth.ApplicationService\bin\Debug\net8.0\HA.Order.Domain.pdb

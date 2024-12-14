@@ -4,6 +4,7 @@ using HA.Order.Domain;
 using HA.Order.Dtos;
 using HA.Order.Dtos.OrderPayment;
 using HA.Order.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -17,9 +18,9 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
     public class PaymentService : OrderServiceBase, IPaymentService
     {
         private readonly ILogger<PaymentService> _logger;
-        private readonly OrderDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public PaymentService(ILogger<PaymentService> logger, OrderDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public PaymentService(ILogger<PaymentService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

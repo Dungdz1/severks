@@ -5,6 +5,7 @@ using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Brand;
 using HA.Product.Dtos.ProductModule.Category;
 using HA.Product.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -18,9 +19,9 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
     public class BrandService : ProductServiceBase, IBrandService
     {
         private readonly ILogger<BrandService> _logger;
-        private readonly ProductDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public BrandService(ILogger<BrandService> logger, ProductDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public BrandService(ILogger<BrandService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

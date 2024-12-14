@@ -3,7 +3,7 @@ using HA.Auth.ApplicationService.UserModule.Abstract;
 using HA.Auth.Domain;
 using HA.Auth.Dtos.Address;
 using HA.Auth.Dtos.UserModule;
-using HA.Auth.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -17,9 +17,9 @@ namespace HA.Auth.ApplicationService.UserModule.Implements
     public class AddressService : AuthServiceBase, IAddressService
     {
         private readonly ILogger<AddressService> _logger;
-        private readonly AuthDbContext _dbContext;
+        private readonly BasethDbContext _dbContext;
         private readonly IConfiguration _configuration;
-        public AddressService(ILogger<AddressService> logger, AuthDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
+        public AddressService(ILogger<AddressService> logger, BasethDbContext dbContext, IConfiguration configuration) : base(logger, dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;

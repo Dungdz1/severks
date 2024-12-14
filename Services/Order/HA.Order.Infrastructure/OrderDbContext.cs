@@ -26,12 +26,20 @@ namespace HA.Order.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<OdOrder>(entity =>
+            {
+                entity.ToTable("Order");
+                entity.HasKey(e => e.Id);
+                entity
+                    .Property(e => e.Id)
+                    .HasColumnName("Id") 
+                    .ValueGeneratedOnAdd() 
+                    .IsRequired();
+            });
+            modelBuilder.Entity<AuthUser>().ToTable("AuthUser");
 
-            modelBuilder.Entity<AuthUser>()
-                .ToTable("AuthUser", schema: "OrderSchema");
             modelBuilder
-                .Entity<OdDetail>()
+                .Entity<OdDetail>() 
                 .HasOne<OdOrder>()
                 .WithMany()
                 .HasForeignKey(e => e.OrderId)
@@ -53,8 +61,8 @@ namespace HA.Order.Infrastructure
             modelBuilder
                 .Entity<OrderUser>()
                 .HasOne<AuthUser>()
-                .WithMany()
-                .HasForeignKey(e => e.UserId)
+                .WithOne()
+                .HasForeignKey<OrderUser>(e => e.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
             modelBuilder
                 .Entity<OdOrderDiscount>()

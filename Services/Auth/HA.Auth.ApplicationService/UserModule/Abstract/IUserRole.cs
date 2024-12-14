@@ -9,6 +9,6 @@ namespace HA.Auth.ApplicationService.UserModule.Abstract
 {
     public interface IUserRole
     {
-        void GrandRole(GrandRole input);
+        //void GrandRole(GrandRole input);
     }
 }

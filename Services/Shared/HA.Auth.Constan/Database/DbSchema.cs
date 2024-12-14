@@ -14,5 +14,6 @@ namespace HA.Auth.Constan.Database
         public const string Product = "prod";
         public const string Order = "order";
         public const string Notification = "noti";
+        public const string Baseth = "base";
     }
 }

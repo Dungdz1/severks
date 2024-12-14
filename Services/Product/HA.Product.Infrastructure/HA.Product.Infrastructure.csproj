@@ -8,11 +8,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Auth\HA.Auth.Domain\HA.Auth.Domain.csproj" />
+    <ProjectReference Include="..\..\Order\HA.Order.Domain\HA.Order.Domain.csproj" />
     <ProjectReference Include="..\HA.Product.Domain\HA.Product.Domain.csproj" />
   </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
 	</ItemGroup>
 

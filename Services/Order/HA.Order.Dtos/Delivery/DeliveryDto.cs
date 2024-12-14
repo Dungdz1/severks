@@ -8,7 +8,8 @@ namespace HA.Order.Dtos.Delivery
 {
     public class DeliveryDto
     {
+        public int Id { get; set; }
         public int AddressId { get; set; }
-        public List<int> OrderIds { get; set; }
+        public int OrderIds { get; set; }
     }
 }
