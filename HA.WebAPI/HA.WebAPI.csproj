@@ -17,6 +17,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +28,10 @@
     <ProjectReference Include="..\Services\Product\HA.Product.ApplicationService\HA.Product.ApplicationService.csproj" />
     <ProjectReference Include="..\Services\Product\HA.Product.Dtos\HA.Product.Dtos.csproj" />
     <ProjectReference Include="..\Services\Shared\HA.Shared.Connects\HA.Shared.Connects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

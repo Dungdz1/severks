@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "Q5gL3/W3Bdi3bzMTWhFkG+iNWWrd+hOynf0R/1dv4pk=",
+  "Hash": "UjwDrlx9jYyPesP79AEiEV1VjrfLCz8Y3VhiQ5SSxB4=",
   "Source": "HA.WebAPI",
   "BasePath": "_content/HA.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HA.WebAPI\\wwwroot",
+      "Source": "HA.WebAPI",
+      "ContentRoot": "C:\\Users\\dung0\\OneDrive\\Documents\\Dn\\HA.WebAPI\\HA.WebAPI\\wwwroot\\",
+      "BasePath": "_content/HA.WebAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

@@ -9,5 +9,6 @@ namespace HA.Product.Dtos.ProductModule
     public class UpdateImageDto : CreateImageDto
     {
         public int Id { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

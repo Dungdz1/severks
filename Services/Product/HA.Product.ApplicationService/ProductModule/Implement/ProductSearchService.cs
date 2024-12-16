@@ -47,7 +47,7 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             {
                 Id = product.Id,
                 ProductName = product.ProductName,
-                ProdPrice = product.ProdPrice.ToString(),
+                ProdPrice = product.ProdPrice,
                 ProdImg = product.ProdImg,
                 ProdDescription = product.ProdDescription,
                 ProdStock = product.ProdStock.ToString()

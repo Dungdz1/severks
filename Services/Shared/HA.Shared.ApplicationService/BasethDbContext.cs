@@ -148,7 +148,14 @@ namespace HA.Shared.ApplicationService
                 .HasOne<AuthSale>()
                 .WithMany()
                 .HasForeignKey(e => e.SaleId);
-
+            modelBuilder
+                .Entity<ProdCart>()
+                .Property(e => e.Quantity)
+                .HasPrecision(18, 2);
+            modelBuilder
+                .Entity<ProdProduct>()
+                .Property(e => e.ProdPrice)
+                .HasPrecision(18, 2);
             modelBuilder
                 .Entity<ProdCart>()
                 .HasOne<ProdProduct>()
@@ -159,7 +166,15 @@ namespace HA.Shared.ApplicationService
                 .HasOne<AuthCustomer>()
                 .WithMany()
                 .HasForeignKey(e => e.CustomerId);
+            modelBuilder
+                .Entity<OdDetail>()
+                .Property(p => p.Price)
+                .HasPrecision(18, 2);
 
+            modelBuilder
+                .Entity<OdOrder>()
+                .Property(p => p.TotalAmount)
+                .HasPrecision(18, 2);
             modelBuilder
                 .Entity<OdDetail>()
                 .HasOne<OdOrder>()

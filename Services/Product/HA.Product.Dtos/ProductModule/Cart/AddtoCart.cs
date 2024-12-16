@@ -10,6 +10,6 @@ namespace HA.Product.Dtos.ProductModule.Cart
     {
         public int CustomerId { get; set; }
         public List<int> ProductIds { get; set; }
-        public int Quantity { get; set;}
+        public decimal Quantity { get; set;}
     }
 }

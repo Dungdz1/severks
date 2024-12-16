@@ -3,6 +3,7 @@ using HA.Order.ApplicationService.OrderModule.Abstract;
 using HA.Order.Domain;
 using HA.Order.Dtos;
 using HA.Order.Dtos.Delivery;
+using HA.Order.Dtos.Detail;
 using HA.Order.Dtos.OrderDiscount;
 using HA.Order.Dtos.OrderPayment;
 using HA.Order.Dtos.ProductOrder;
@@ -182,5 +183,27 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
             }
         }
 
+        public void OrderDetail(DetailDto input)
+        {
+            foreach (var productId in input.ProductIds)
+            {
+                var orderFind = _dbContext.OrderDetails.FirstOrDefault(s =>
+                s.ProductId == productId && s.OrderId == input.OrderId);
+
+                if (orderFind != null)
+                {
+                    continue;
+                }
+                _dbContext.OrderDetails.Add(
+                    new OdDetail
+                    {
+                        ProductId = productId,
+                        OrderId = input.OrderId,
+                        Price = input.Price,
+                        Quantity = input.Quantity,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
     }
 }

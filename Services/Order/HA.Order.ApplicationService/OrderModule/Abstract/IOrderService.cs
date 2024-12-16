@@ -1,10 +1,12 @@
 ﻿using HA.Order.Dtos;
 using HA.Order.Dtos.Delivery;
+using HA.Order.Dtos.Detail;
 using HA.Order.Dtos.OrderDiscount;
 using HA.Order.Dtos.OrderPayment;
 using HA.Order.Dtos.ProductOrder;
 using HA.Order.Dtos.UserOrder;
 using HA.Product.Dtos.ProductModule;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,5 +28,6 @@ namespace HA.Order.ApplicationService.OrderModule.Abstract
         void AddPaymentToOrder(AddPaymentDto input);
         void AddDiscointToOrder(AddDiscounttoOrder input);
         void AddDelivery(DeliveryDto input);
+        void OrderDetail(DetailDto input);
     }
 }

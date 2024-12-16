@@ -10,7 +10,7 @@ namespace HA.Order.Dtos.OrderPayment
     {
         public int Id { get; set; }
         public string PaymentMethod { get; set; }
-        public string Amount { get; set; }
+        public int Amount { get; set; }
         public DateTime PaymentDate { get; set; }
         public string Status { get; set; }
         public string TransactionCode { get; set; }

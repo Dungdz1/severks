@@ -175,3 +175,5 @@ C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\obj\Debug\net8.0\HA.Web
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\obj\Debug\net8.0\ref\HA.WebAPI.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\bin\Debug\net8.0\HA.Shared.Connects.dll
 C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\bin\Debug\net8.0\HA.Shared.Connects.pdb
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\bin\Debug\net8.0\HA.WebAPI.staticwebassets.runtime.json
+C:\Users\dung0\OneDrive\Documents\Dn\HA.WebAPI\HA.WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
