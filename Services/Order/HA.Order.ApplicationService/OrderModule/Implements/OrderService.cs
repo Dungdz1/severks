@@ -65,7 +65,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 Id = s.Id,
                 Status = s.Status,
                 OrderDate = s.OrderDate,
-                TotalAmount = s.TotalAmount,
             });
             return result.ToList();
         }
@@ -185,25 +184,38 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
 
         public void OrderDetail(DetailDto input)
         {
-            foreach (var productId in input.ProductIds)
-            {
-                var orderFind = _dbContext.OrderDetails.FirstOrDefault(s =>
-                s.ProductId == productId && s.OrderId == input.OrderId);
+            var orderDetail = _dbContext.OrderDetails
+                .FirstOrDefault(s => s.ProductId == input.ProductId && s.OrderId == input.OrderId);
 
-                if (orderFind != null)
-                {
-                    continue;
-                }
-                _dbContext.OrderDetails.Add(
-                    new OdDetail
-                    {
-                        ProductId = productId,
-                        OrderId = input.OrderId,
-                        Price = input.Price,
-                        Quantity = input.Quantity,
-                    });
-                _dbContext.SaveChanges();
+            if (orderDetail != null)
+            {
+                // Nếu tồn tại, cập nhật Quantity và TotalAmount
+                orderDetail.Quantity += input.Quantity;
+                orderDetail.TotalAmount = orderDetail.Quantity * orderDetail.Price;
             }
+            else
+            {
+                // Thêm mới chi tiết đơn hàng
+                var newOrderDetail = new OdDetail
+                {
+                    ProductId = input.ProductId,
+                    OrderId = input.OrderId,
+                    Price = input.Price,
+                    Quantity = input.Quantity,
+                    TotalAmount = input.Quantity * input.Price
+                };
+
+                _dbContext.OrderDetails.Add(newOrderDetail);
+            }
+
+            _dbContext.SaveChanges();
+        }
+
+        public decimal CalculateOrderTotal(int orderId)
+        {
+            return _dbContext.OrderDetails
+                .Where(d => d.OrderId == orderId)
+                .Sum(d => d.TotalAmount);
         }
     }
 }

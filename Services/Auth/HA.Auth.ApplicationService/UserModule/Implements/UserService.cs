@@ -5,6 +5,7 @@ using HA.Auth.Dtos.Address;
 using HA.Auth.Dtos.Logg;
 using HA.Auth.Dtos.UserModule;
 using HA.Auth.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;

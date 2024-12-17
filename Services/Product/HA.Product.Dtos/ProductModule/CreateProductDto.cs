@@ -22,12 +22,7 @@ namespace HA.Product.Dtos.ProductModule
             set => _prodprice = value;
         }
 
-        private string _prodimg;
-        public string ProdImg
-        {
-            get => _prodimg;
-            set => _prodimg = value;
-        }
+        
 
         private string _proddescription;
         public string ProdDescription

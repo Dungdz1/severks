@@ -175,7 +175,6 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             {
                 ProductName = input.ProductName,
                 ProdPrice = input.ProdPrice,
-                ProdImg = input.ProdImg,
                 ProdDescription = input.ProdDescription,
                 ProdStock = input.ProdStock
             };
@@ -186,7 +185,6 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
                 Id = product.Id,
                 ProductName = product.ProductName,
                 ProdPrice = product.ProdPrice,
-                ProdImg = product.ProdImg,
                 ProdDescription = product.ProdDescription,
                 ProdStock = product.ProdStock,
             };
@@ -206,7 +204,6 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
                 Id = s.Id,
                 ProductName = s.ProductName,
                 ProdPrice = s.ProdPrice,
-                ProdImg = s.ProdImg,
                 ProdDescription = s.ProdDescription,
                 ProdStock = s.ProdStock,
             });
@@ -218,7 +215,6 @@ namespace HA.Product.ApplicationService.ProductModule.Implement
             var productFind = FindProductById(input.Id);
             productFind.ProductName = input.ProductName;
             productFind.ProdPrice = input.ProdPrice;
-            productFind.ProdImg = input.ProdImg;
             productFind.ProdDescription = input.ProdDescription;
             productFind.ProdStock = input.ProdStock;
         }

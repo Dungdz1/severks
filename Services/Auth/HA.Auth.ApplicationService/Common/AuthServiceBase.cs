@@ -14,33 +14,11 @@ namespace HA.Auth.ApplicationService.Common
     {
         protected readonly ILogger _logger;
         protected readonly BasethDbContext _dbContext;
-        private ILogger<UserPermissionService> logger;
-        private Infrastructure.BasethDbContext dbContext;
-        private ILogger<UserService> logger1;
-        private ILogger<UserRoleService> logger2;
 
         protected AuthServiceBase(ILogger logger, BasethDbContext dbContext)
         {
             _logger = logger;
             _dbContext = dbContext;
-        }
-
-        protected AuthServiceBase(ILogger<UserPermissionService> logger, Infrastructure.BasethDbContext dbContext)
-        {
-            this.logger = logger;
-            this.dbContext = dbContext;
-        }
-
-        protected AuthServiceBase(ILogger<UserService> logger1, Infrastructure.BasethDbContext dbContext)
-        {
-            this.logger1 = logger1;
-            this.dbContext = dbContext;
-        }
-
-        protected AuthServiceBase(ILogger<UserRoleService> logger2, Infrastructure.BasethDbContext dbContext)
-        {
-            this.logger2 = logger2;
-            this.dbContext = dbContext;
         }
 
         protected AuthUser FindUserById(int userId)

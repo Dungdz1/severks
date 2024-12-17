@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HA.Auth.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e434e27c0be6561606c7f4692edc2ca1f8acd16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c44d27eca12df41f53a169b752dd6a7da747a89")]
 [assembly: System.Reflection.AssemblyProductAttribute("HA.Auth.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HA.Auth.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

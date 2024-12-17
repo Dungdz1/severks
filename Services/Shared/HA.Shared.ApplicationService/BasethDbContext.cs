@@ -13,6 +13,8 @@ namespace HA.Shared.ApplicationService
     public class BasethDbContext : DbContext
     {
         public DbSet<AuthUser> Users { get; set; }
+        public DbSet<AuthAdmin> Admins { get; set; }
+        public DbSet<AuthAdminUser> AdminUsers { get; set; }
         public DbSet<AuthPermissions> Permissions { get; set; }
         public DbSet<AuthAddress> Addresses { get; set; }
         public DbSet<AuthAddressUser> AddressesUsers { get; set; }
@@ -46,6 +48,20 @@ namespace HA.Shared.ApplicationService
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder
+                .Entity<AuthAdminUser>()
+                .HasOne<AuthUser>()
+                .WithMany()
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder
+                .Entity<AuthAdminUser>()
+                .HasOne<AuthAdmin>()
+                .WithMany()
+                .HasForeignKey(e => e.AdminId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder
                 .Entity<AuthAddressUser>()
                 .HasOne<AuthAddress>()
@@ -172,7 +188,7 @@ namespace HA.Shared.ApplicationService
                 .HasPrecision(18, 2);
 
             modelBuilder
-                .Entity<OdOrder>()
+                .Entity<OdDetail>()
                 .Property(p => p.TotalAmount)
                 .HasPrecision(18, 2);
             modelBuilder

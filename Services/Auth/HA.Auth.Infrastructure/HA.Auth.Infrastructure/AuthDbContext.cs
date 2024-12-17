@@ -16,7 +16,7 @@ using HA.Auth.Constan.Database;
 
 namespace HA.Auth.Infrastructure
 {
-    public class BasethDbContext : DbContext
+    public class AuthDbContext : DbContext
     {
         public DbSet<AuthUser> Users { get; set; }
         public DbSet<AuthPermissions> Permissions { get; set; }
@@ -28,7 +28,7 @@ namespace HA.Auth.Infrastructure
         public DbSet<AuthPermissionCustomer> CustomersPermissions { get; set; }
         public DbSet<AuthPermissionSale> SalePermissions { get; set; }
 
-        public BasethDbContext(DbContextOptions<BasethDbContext> options) : base(options) { }
+        public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

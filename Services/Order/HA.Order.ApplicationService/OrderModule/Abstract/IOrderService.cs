@@ -29,5 +29,6 @@ namespace HA.Order.ApplicationService.OrderModule.Abstract
         void AddDiscointToOrder(AddDiscounttoOrder input);
         void AddDelivery(DeliveryDto input);
         void OrderDetail(DetailDto input);
+        decimal CalculateOrderTotal(int orderId);
     }
 }

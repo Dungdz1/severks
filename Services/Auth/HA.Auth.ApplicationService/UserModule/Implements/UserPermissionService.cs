@@ -2,6 +2,7 @@
 using HA.Auth.ApplicationService.UserModule.Abstract;
 using HA.Auth.Domain;
 using HA.Auth.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;

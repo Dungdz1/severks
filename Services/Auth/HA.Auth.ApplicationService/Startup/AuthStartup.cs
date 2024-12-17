@@ -3,6 +3,7 @@ using HA.Auth.ApplicationService.UserModule.Implements;
 using HA.Auth.Constan.Database;
 using HA.Auth.Domain;
 using HA.Auth.Infrastructure;
+using HA.Shared.ApplicationService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

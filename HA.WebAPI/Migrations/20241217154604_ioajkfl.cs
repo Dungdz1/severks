@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HA.WebAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class kjnfk : Migration
+    public partial class ioajkfl : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,6 +16,20 @@ namespace HA.WebAPI.Migrations
 
             migrationBuilder.EnsureSchema(
                 name: "prod");
+
+            migrationBuilder.CreateTable(
+                name: "Admins",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AdminName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdminPassword = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Admins", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "AuthAddress",
@@ -153,7 +167,6 @@ namespace HA.WebAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -233,7 +246,6 @@ namespace HA.WebAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProdPrice = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
-                    ProdImg = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProdDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProdStock = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
@@ -283,6 +295,33 @@ namespace HA.WebAPI.Migrations
                         column: x => x.CustomerId,
                         principalSchema: "auth",
                         principalTable: "AuthCustomer",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AdminUsers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AdminId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AdminUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AdminUsers_Admins_AdminId",
+                        column: x => x.AdminId,
+                        principalTable: "Admins",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AdminUsers_AuthUser_UserId",
+                        column: x => x.UserId,
+                        principalSchema: "auth",
+                        principalTable: "AuthUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -460,7 +499,8 @@ namespace HA.WebAPI.Migrations
                     OrderId = table.Column<int>(type: "int", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false)
+                    Price = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -663,6 +703,16 @@ namespace HA.WebAPI.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_AdminUsers_AdminId",
+                table: "AdminUsers",
+                column: "AdminId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AdminUsers_UserId",
+                table: "AdminUsers",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_AuthAddressUser_AddressId",
                 schema: "auth",
                 table: "AuthAddressUser",
@@ -832,6 +882,9 @@ namespace HA.WebAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "AdminUsers");
+
+            migrationBuilder.DropTable(
                 name: "AuthAddressUser",
                 schema: "auth");
 
@@ -893,6 +946,9 @@ namespace HA.WebAPI.Migrations
             migrationBuilder.DropTable(
                 name: "ProdSale",
                 schema: "prod");
+
+            migrationBuilder.DropTable(
+                name: "Admins");
 
             migrationBuilder.DropTable(
                 name: "AuthAddress",

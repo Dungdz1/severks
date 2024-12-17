@@ -33,12 +33,16 @@ namespace HA.Shared.Connects.Startup
                             options.MigrationsHistoryTable(
                                 DbSchema.TableMigrationsHistory,
                                 DbSchema.Baseth
-                                );
+                            );
                         }
                     );
                 },
                 ServiceLifetime.Scoped
             );
+            builder.Services.AddScoped<IAdminService, AdminService>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddScoped<IAddressService, AddressService>();
             builder.Services.AddScoped<ISaleService, SaleService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IDiscountService, DiscountService>();

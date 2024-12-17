@@ -145,5 +145,16 @@ namespace HA.WebAPI.Controllers.Order
                 });
             }
         }
+
+        [HttpGet("calculate-total/{orderId}")]
+        public IActionResult CalculateOrderTotal(int orderId)
+        {
+            var totalAmount = _orderService.CalculateOrderTotal(orderId);
+            return Ok(new
+            {
+                OrderId = orderId,
+                TotalAmount = totalAmount
+            });
+        }
     }
 }
