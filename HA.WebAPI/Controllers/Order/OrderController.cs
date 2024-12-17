@@ -1,9 +1,9 @@
 ﻿using HA.Order.ApplicationService.OrderModule.Abstract;
 using HA.Order.Dtos;
 using HA.Order.Dtos.Delivery;
+using HA.Order.Dtos.Detail;
 using HA.Order.Dtos.OrderDiscount;
 using HA.Order.Dtos.OrderPayment;
-using HA.Order.Dtos.ProductOrder;
 using HA.Product.ApplicationService.ProductModule.Abstracts;
 using HA.Product.ApplicationService.ProductModule.Implement;
 using HA.Product.Dtos.ProductModule;
@@ -18,37 +18,13 @@ namespace HA.WebAPI.Controllers.Order
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        public OrderController(IOrderService orderService)
+        private readonly ILogger<OrderController> _logger;
+        public OrderController(IOrderService orderService, ILogger<OrderController> logger)
         {
             _orderService = orderService;
+            _logger = logger;
         }
-        [HttpPost("CreateOrder")]
-        public IActionResult CreateOrder([FromBody] CreateOrderDto input)
-        {
-            var order = _orderService.CreatenewOrder(input);
-            return Ok(order);
-        }
-
-        [HttpPut("update")]
-        public IActionResult UpdateOrder([FromBody] UpdateOrderDto input)
-        {
-            try
-            {
-                _orderService.UpdateOrder(input);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest();
-            }
-        }
-
-        [HttpDelete("delete")]
-        public IActionResult DeleteProduct(int id)
-        {
-            _orderService.DeleteOrder(id);
-            return Ok();
-        }
+        
 
         [HttpPost("AddOrderDiscount")]
         public IActionResult AddOrderDiscount([FromBody] AddDiscounttoOrder input)
@@ -121,40 +97,45 @@ namespace HA.WebAPI.Controllers.Order
                 });
             }
         }
-
-        [HttpPost("AddProductToOrder")]
-        public IActionResult AddProductOrder([FromBody] AddProducttoOrder input)
+        [HttpPost]
+        public IActionResult CreateNewOrder([FromBody] OrderDto input)
         {
             try
             {
-                if (input == null || input.ProductIds == null || !input.ProductIds.Any())
-                {
-                    return BadRequest(new { Message = "Invalid input data." });
-                }
-
-                _orderService.AddProducttoOrder(input);
-
-                return Ok(new { Message = "Order brands added successfully." });
+                _orderService.CreateNewOrder(input);
+                return Ok(new { Message = "Order đã được tạo thành công.", Order = input });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new
-                {
-                    Message = "An error occurred while adding Discount.",
-                    Error = ex.Message
-                });
+                return StatusCode(500, new { Message = "Đã xảy ra lỗi trong quá trình tạo Order.", Details = ex.Message });
             }
         }
 
-        [HttpGet("calculate-total/{orderId}")]
-        public IActionResult CalculateOrderTotal(int orderId)
+        [HttpPost("add_product")]
+        public IActionResult AddtoOrder([FromBody] DetailDto input)
         {
-            var totalAmount = _orderService.CalculateOrderTotal(orderId);
-            return Ok(new
+            try
             {
-                OrderId = orderId,
-                TotalAmount = totalAmount
-            });
+                if (input == null)
+                {
+                    return BadRequest(new { Message = "Input data is required." });
+                }
+
+                _orderService.AddProductToOrder(input);
+                return Ok(new { Message = "Products have been successfully added to the order." });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An error occurred while adding products to the order.", Details = ex.Message });
+            }
         }
     }
 }

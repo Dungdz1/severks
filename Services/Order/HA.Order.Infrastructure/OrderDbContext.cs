@@ -14,7 +14,6 @@ namespace HA.Order.Infrastructure
     {
         public DbSet<OdOrder> Orders { get; set; }
         public DbSet<OdDetail> OrderDetails { get; set; }
-        public DbSet<OrderUser> OrderUsers { get; set; }
         public DbSet<OdDiscount> Discounts { get; set; }
         public DbSet<OdOrderDiscount> OrderDiscounts { get; set; }
         public DbSet<OdPayment> Payments { get; set; }
@@ -49,20 +48,6 @@ namespace HA.Order.Infrastructure
                 .HasOne<ProdProduct>()
                 .WithMany()
                 .HasForeignKey(e => e.ProductId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<OrderUser>()
-                .HasOne<OdOrder>()
-                .WithMany()
-                .HasForeignKey(e => e.OrderId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<OrderUser>()
-                .HasOne<AuthUser>()
-                .WithOne()
-                .HasForeignKey<OrderUser>(e => e.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
             modelBuilder
                 .Entity<OdOrderDiscount>()

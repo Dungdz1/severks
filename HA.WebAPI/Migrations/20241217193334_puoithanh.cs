@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HA.WebAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class ioajkfl : Migration
+    public partial class puoithanh : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -160,21 +160,6 @@ namespace HA.WebAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Orders",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Orders", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Payments",
                 columns: table => new
                 {
@@ -245,7 +230,7 @@ namespace HA.WebAPI.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ProdPrice = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    ProdPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ProdDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ProdStock = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
@@ -385,137 +370,24 @@ namespace HA.WebAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Deliverys",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    AddressId = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Deliverys", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Deliverys_AuthAddress_AddressId",
-                        column: x => x.AddressId,
-                        principalSchema: "auth",
-                        principalTable: "AuthAddress",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Deliverys_Orders_OrderId",
-                        column: x => x.OrderId,
-                        principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "OrderDiscounts",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
-                    DiscountId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_OrderDiscounts", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_OrderDiscounts_Discounts_DiscountId",
-                        column: x => x.DiscountId,
-                        principalTable: "Discounts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_OrderDiscounts_Orders_OrderId",
-                        column: x => x.OrderId,
-                        principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "OrderUsers",
+                name: "Orders",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false)
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_OrderUsers", x => x.Id);
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_OrderUsers_AuthUser_UserId",
+                        name: "FK_Orders_AuthUser_UserId",
                         column: x => x.UserId,
                         principalSchema: "auth",
                         principalTable: "AuthUser",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_OrderUsers_Orders_OrderId",
-                        column: x => x.OrderId,
-                        principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "OrderPayments",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
-                    PaymentId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_OrderPayments", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_OrderPayments_Orders_OrderId",
-                        column: x => x.OrderId,
-                        principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_OrderPayments_Payments_PaymentId",
-                        column: x => x.PaymentId,
-                        principalTable: "Payments",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "OrderDetails",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
-                    ProductId = table.Column<int>(type: "int", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
-                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_OrderDetails", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_OrderDetails_Orders_OrderId",
-                        column: x => x.OrderId,
-                        principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_OrderDetails_ProdProduct_ProductId",
-                        column: x => x.ProductId,
-                        principalSchema: "prod",
-                        principalTable: "ProdProduct",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -645,8 +517,7 @@ namespace HA.WebAPI.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProductId = table.Column<int>(type: "int", nullable: false),
-                    SaleId = table.Column<int>(type: "int", nullable: false),
-                    ProdProductId = table.Column<int>(type: "int", nullable: true)
+                    SaleId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -658,12 +529,6 @@ namespace HA.WebAPI.Migrations
                         principalTable: "AuthSale",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ProdSale_ProdProduct_ProdProductId",
-                        column: x => x.ProdProductId,
-                        principalSchema: "prod",
-                        principalTable: "ProdProduct",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_ProdSale_ProdProduct_ProductId",
                         column: x => x.ProductId,
@@ -698,6 +563,114 @@ namespace HA.WebAPI.Migrations
                         column: x => x.TypeId,
                         principalSchema: "prod",
                         principalTable: "ProdType",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Deliverys",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AddressId = table.Column<int>(type: "int", nullable: false),
+                    OrderId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Deliverys", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Deliverys_AuthAddress_AddressId",
+                        column: x => x.AddressId,
+                        principalSchema: "auth",
+                        principalTable: "AuthAddress",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Deliverys_Orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderDetails",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderDetails", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderDetails_Orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_OrderDetails_ProdProduct_ProductId",
+                        column: x => x.ProductId,
+                        principalSchema: "prod",
+                        principalTable: "ProdProduct",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderDiscounts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    DiscountId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderDiscounts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderDiscounts_Discounts_DiscountId",
+                        column: x => x.DiscountId,
+                        principalTable: "Discounts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_OrderDiscounts_Orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderPayments",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    PaymentId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderPayments", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderPayments_Orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_OrderPayments_Payments_PaymentId",
+                        column: x => x.PaymentId,
+                        principalTable: "Payments",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -789,13 +762,8 @@ namespace HA.WebAPI.Migrations
                 column: "PaymentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_OrderUsers_OrderId",
-                table: "OrderUsers",
-                column: "OrderId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrderUsers_UserId",
-                table: "OrderUsers",
+                name: "IX_Orders_UserId",
+                table: "Orders",
                 column: "UserId",
                 unique: true);
 
@@ -860,12 +828,6 @@ namespace HA.WebAPI.Migrations
                 column: "TypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProdSale_ProdProductId",
-                schema: "prod",
-                table: "ProdSale",
-                column: "ProdProductId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_ProdSale_ProductId",
                 schema: "prod",
                 table: "ProdSale",
@@ -921,9 +883,6 @@ namespace HA.WebAPI.Migrations
                 name: "OrderPayments");
 
             migrationBuilder.DropTable(
-                name: "OrderUsers");
-
-            migrationBuilder.DropTable(
                 name: "ProdCart",
                 schema: "prod");
 
@@ -958,14 +917,10 @@ namespace HA.WebAPI.Migrations
                 name: "Discounts");
 
             migrationBuilder.DropTable(
-                name: "Payments");
-
-            migrationBuilder.DropTable(
-                name: "AuthUser",
-                schema: "auth");
-
-            migrationBuilder.DropTable(
                 name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "Payments");
 
             migrationBuilder.DropTable(
                 name: "AuthCustomer",
@@ -994,6 +949,10 @@ namespace HA.WebAPI.Migrations
             migrationBuilder.DropTable(
                 name: "ProdProduct",
                 schema: "prod");
+
+            migrationBuilder.DropTable(
+                name: "AuthUser",
+                schema: "auth");
         }
     }
 }

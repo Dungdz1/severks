@@ -20,7 +20,5 @@ namespace HA.Product.Domain
         public string ProdDescription { get; set; }
         public string ProdStock { get; set; }
         public bool IsDelete { get; set; }
-
-        public ICollection<ProdSale> SaleProducts { get; set; }
     }
 }

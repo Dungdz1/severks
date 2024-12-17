@@ -36,7 +36,6 @@ namespace HA.Shared.ApplicationService
         public DbSet<ProdCart> ProductCarts { get; set; }
         public DbSet<OdOrder> Orders { get; set; }
         public DbSet<OdDetail> OrderDetails { get; set; }
-        public DbSet<OrderUser> OrderUsers { get; set; }
         public DbSet<OdDiscount> Discounts { get; set; }
         public DbSet<OdOrderDiscount> OrderDiscounts { get; set; }
         public DbSet<OdPayment> Payments { get; set; }
@@ -48,6 +47,13 @@ namespace HA.Shared.ApplicationService
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder
+                .Entity<OdDetail>()
+                .HasOne<OdOrder>()
+                .WithMany()
+                .HasForeignKey(e => e.OrderId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             modelBuilder
                 .Entity<AuthAdminUser>()
                 .HasOne<AuthUser>()
@@ -168,10 +174,9 @@ namespace HA.Shared.ApplicationService
                 .Entity<ProdCart>()
                 .Property(e => e.Quantity)
                 .HasPrecision(18, 2);
-            modelBuilder
-                .Entity<ProdProduct>()
-                .Property(e => e.ProdPrice)
-                .HasPrecision(18, 2);
+            modelBuilder.Entity<ProdProduct>()
+                .Property(p => p.ProdPrice)
+                .HasColumnType("decimal(18, 2)");
             modelBuilder
                 .Entity<ProdCart>()
                 .HasOne<ProdProduct>()
@@ -182,15 +187,9 @@ namespace HA.Shared.ApplicationService
                 .HasOne<AuthCustomer>()
                 .WithMany()
                 .HasForeignKey(e => e.CustomerId);
-            modelBuilder
-                .Entity<OdDetail>()
-                .Property(p => p.Price)
-                .HasPrecision(18, 2);
-
-            modelBuilder
-                .Entity<OdDetail>()
-                .Property(p => p.TotalAmount)
-                .HasPrecision(18, 2);
+            modelBuilder.Entity<OdDetail>()
+                .Property(od => od.TotalAmount)
+                .HasColumnType("decimal(18, 2)");
             modelBuilder
                 .Entity<OdDetail>()
                 .HasOne<OdOrder>()
@@ -204,19 +203,6 @@ namespace HA.Shared.ApplicationService
                 .HasForeignKey(e => e.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder
-                .Entity<OrderUser>()
-                .HasOne<OdOrder>()
-                .WithMany()
-                .HasForeignKey(e => e.OrderId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<OrderUser>()
-                .HasOne<AuthUser>()
-                .WithOne()
-                .HasForeignKey<OrderUser>(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
             modelBuilder
                 .Entity<OdOrderDiscount>()
                 .HasOne<OdOrder>()
@@ -254,6 +240,20 @@ namespace HA.Shared.ApplicationService
                 .HasOne<AuthAddress>()
                 .WithMany()
                 .HasForeignKey(e => e.AddressId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder
+                .Entity<OdDetail>()
+                .HasOne<ProdProduct>()
+                .WithMany()
+                .HasForeignKey(e => e.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder
+                .Entity<OdOrder>()
+                .HasOne<AuthUser>()
+                .WithOne()
+                .HasForeignKey<OdOrder>(e => e.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

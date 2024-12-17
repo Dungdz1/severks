@@ -6,13 +6,12 @@ using HA.Order.Dtos.Delivery;
 using HA.Order.Dtos.Detail;
 using HA.Order.Dtos.OrderDiscount;
 using HA.Order.Dtos.OrderPayment;
-using HA.Order.Dtos.ProductOrder;
-using HA.Order.Dtos.UserOrder;
 using HA.Order.Infrastructure;
 using HA.Product.Domain;
 using HA.Product.Dtos.ProductModule;
 using HA.Product.Dtos.ProductModule.Cart;
 using HA.Shared.ApplicationService;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -35,22 +34,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
             _configuration = configuration;
         }
 
-        public OrderDto CreatenewOrder(CreateOrderDto input)
-        {
-            var order = new OdOrder
-            {
-                OrderDate = input.OrderDate,
-                Status = input.Status,
-            };
-            _dbContext.Orders.Add(order);
-            _dbContext.SaveChanges();
-            return new OrderDto
-            {
-                Id = order.Id,
-                Status = order.Status,
-            };
-        }
-
         public void DeleteOrder(int id)
         {
             var orderFind = FindOrderById(id);
@@ -63,56 +46,15 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
             var result = _dbContext.Orders.Select(s => new OrderDto
             {
                 Id = s.Id,
+                UserId = s.UserId,
                 Status = s.Status,
                 OrderDate = s.OrderDate,
             });
             return result.ToList();
         }
 
-        public void UpdateOrder(UpdateOrderDto input)
-        {
-            var orderFind = FindOrderById(input.Id);
-            orderFind.OrderDate = input.OrderDate;
-            orderFind.Status = input.Status;
-        }
+        
 
-        public void AddProducttoOrder(AddProducttoOrder input)
-        {
-            foreach (var productId in input.ProductIds)
-            {
-                var productFind = _dbContext.OrderDetails.FirstOrDefault(s =>
-                s.ProductId == productId && s.OrderId == input.OrderId);
-
-                if (productFind != null)
-                {
-                    continue;
-                }
-                _dbContext.OrderDetails.Add(
-                    new OdDetail
-                    {
-                        ProductId = productId,
-                        OrderId = input.OrderId,
-                    });
-                _dbContext.SaveChanges();
-            }
-        }
-
-        public void NewUserOrder(UserOrder input)
-        {
-            var orderFind = _dbContext.OrderUsers.FirstOrDefault(s =>
-        s.OrderId == input.OrderIds && s.UserId == input.UserId);
-
-            if (orderFind == null)
-            {
-                _dbContext.OrderUsers.Add(
-                    new OrderUser
-                    {
-                        OrderId = input.OrderIds,
-                        UserId = input.UserId,
-                    });
-                _dbContext.SaveChanges();
-            }
-        }
         public List<OrderDto> GetAllProductOrder(int productId)
         {
             throw new NotImplementedException();
@@ -164,7 +106,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 _dbContext.SaveChanges();
             }
         }
-
         public void AddDelivery(DeliveryDto input)
         {
             var orderFind = _dbContext.Deliverys.FirstOrDefault(s =>
@@ -181,41 +122,94 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 _dbContext.SaveChanges();
             }
         }
-
-        public void OrderDetail(DetailDto input)
+        public void AddProductToOrder(DetailDto input)
         {
-            var orderDetail = _dbContext.OrderDetails
-                .FirstOrDefault(s => s.ProductId == input.ProductId && s.OrderId == input.OrderId);
-
-            if (orderDetail != null)
+            if (input.ProductIds == null || input.Quantitys == null)
             {
-                // Nếu tồn tại, cập nhật Quantity và TotalAmount
-                orderDetail.Quantity += input.Quantity;
-                orderDetail.TotalAmount = orderDetail.Quantity * orderDetail.Price;
+                throw new ArgumentException("ProductIds and Quantitys cannot be null.");
             }
-            else
-            {
-                // Thêm mới chi tiết đơn hàng
-                var newOrderDetail = new OdDetail
-                {
-                    ProductId = input.ProductId,
-                    OrderId = input.OrderId,
-                    Price = input.Price,
-                    Quantity = input.Quantity,
-                    TotalAmount = input.Quantity * input.Price
-                };
 
-                _dbContext.OrderDetails.Add(newOrderDetail);
+            if (input.ProductIds.Count != input.Quantitys.Count)
+            {
+                throw new ArgumentException("The number of ProductIds must match the number of Quantitys.");
+            }
+
+            decimal totalAmount = 0;
+
+            for (int i = 0; i < input.ProductIds.Count; i++)
+            {
+                var productId = input.ProductIds[i];
+                var quantity = input.Quantitys[i];
+
+                // Lấy thông tin sản phẩm từ database
+                var product = _dbContext.Products.FirstOrDefault(p => p.Id == productId);
+                if (product == null)
+                {
+                    throw new ArgumentException($"Product with ID {productId} not found.");
+                }
+
+                var productTotal = product.ProdPrice * quantity;
+                totalAmount += productTotal;
+
+                var orderDetail = _dbContext.OrderDetails.FirstOrDefault(od =>
+                    od.ProductId == productId && od.OrderId == input.OrderId);
+
+                if (orderDetail != null)
+                {
+                    orderDetail.Quantity += quantity;
+                    orderDetail.TotalAmount += productTotal;
+                }
+                else
+                {
+                    // Thêm mới OrderDetail nếu chưa có
+                    _dbContext.OrderDetails.Add(new OdDetail
+                    {
+                        OrderId = input.OrderId,
+                        ProductId = productId,
+                        Quantity = quantity,
+                        TotalAmount = productTotal
+                    });
+                }
+            }
+
+            // Cập nhật tổng tiền cho đơn hàng (nếu cần)
+            var order = _dbContext.OrderDetails.FirstOrDefault(o => o.Id == input.OrderId);
+            if (order != null)
+            {
+                order.TotalAmount += totalAmount;
             }
 
             _dbContext.SaveChanges();
+
+            // Cập nhật lại TotalAmount trong DTO để trả về
+            input.TotalAmount = totalAmount;
+        }
+        
+
+
+        public void CreateNewOrder(OrderDto input)
+        {
+            var existingOrder = _dbContext.Orders
+                .FirstOrDefault(o => o.UserId == input.UserId);
+
+            if (existingOrder != null)
+            {
+                // Nếu đã tồn tại, ném ngoại lệ
+                throw new InvalidOperationException($"User với ID {input.UserId} đã có một Order.");
+            }
+
+            // Nếu không tồn tại, tạo mới Order
+            var newOrder = new OdOrder
+            {
+                UserId = input.UserId,
+                OrderDate = input.OrderDate,
+                Status = input.Status
+            };
+
+            // Thêm Order mới vào database
+            _dbContext.Orders.Add(newOrder);
+            _dbContext.SaveChanges();
         }
 
-        public decimal CalculateOrderTotal(int orderId)
-        {
-            return _dbContext.OrderDetails
-                .Where(d => d.OrderId == orderId)
-                .Sum(d => d.TotalAmount);
-        }
     }
 }

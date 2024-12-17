@@ -9,9 +9,8 @@ namespace HA.Order.Dtos.Detail
     public class DetailDto
     {
         public int OrderId { get; set; }
-        public int ProductId { get; set; }
-        public int Quantity { get; set; }
-        public decimal Price { get; set; }
+        public List<int> ProductIds { get; set; }
+        public List<int> Quantitys { get; set; } 
         public decimal TotalAmount { get; set; }
     }
 }

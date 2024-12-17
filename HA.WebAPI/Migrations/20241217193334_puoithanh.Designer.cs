@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HA.WebAPI.Migrations
 {
     [DbContext(typeof(BasethDbContext))]
-    [Migration("20241217154604_ioajkfl")]
-    partial class ioajkfl
+    [Migration("20241217193334_puoithanh")]
+    partial class puoithanh
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -333,10 +333,6 @@ namespace HA.WebAPI.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -344,8 +340,7 @@ namespace HA.WebAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.HasKey("Id");
 
@@ -408,7 +403,13 @@ namespace HA.WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Orders");
                 });
@@ -488,30 +489,6 @@ namespace HA.WebAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Payments");
-                });
-
-            modelBuilder.Entity("HA.Order.Domain.OrderUser", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
-
-                    b.HasIndex("UserId")
-                        .IsUnique();
-
-                    b.ToTable("OrderUsers");
                 });
 
             modelBuilder.Entity("HA.Product.Domain.ProdBrand", b =>
@@ -624,8 +601,7 @@ namespace HA.WebAPI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("ProdPrice")
-                        .HasPrecision(18, 2)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<string>("ProdStock")
                         .IsRequired()
@@ -740,9 +716,6 @@ namespace HA.WebAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ProdProductId")
-                        .HasColumnType("int");
-
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -750,8 +723,6 @@ namespace HA.WebAPI.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProdProductId");
 
                     b.HasIndex("ProductId");
 
@@ -871,6 +842,15 @@ namespace HA.WebAPI.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("HA.Order.Domain.OdOrder", b =>
+                {
+                    b.HasOne("HA.Auth.Domain.AuthUser", null)
+                        .WithOne()
+                        .HasForeignKey("HA.Order.Domain.OdOrder", "UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("HA.Order.Domain.OdOrderDiscount", b =>
                 {
                     b.HasOne("HA.Order.Domain.OdDiscount", null)
@@ -897,21 +877,6 @@ namespace HA.WebAPI.Migrations
                     b.HasOne("HA.Order.Domain.OdPayment", null)
                         .WithMany()
                         .HasForeignKey("PaymentId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("HA.Order.Domain.OrderUser", b =>
-                {
-                    b.HasOne("HA.Order.Domain.OdOrder", null)
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("HA.Auth.Domain.AuthUser", null)
-                        .WithOne()
-                        .HasForeignKey("HA.Order.Domain.OrderUser", "UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
@@ -994,10 +959,6 @@ namespace HA.WebAPI.Migrations
             modelBuilder.Entity("HA.Product.Domain.ProdSale", b =>
                 {
                     b.HasOne("HA.Product.Domain.ProdProduct", null)
-                        .WithMany("SaleProducts")
-                        .HasForeignKey("ProdProductId");
-
-                    b.HasOne("HA.Product.Domain.ProdProduct", null)
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1008,11 +969,6 @@ namespace HA.WebAPI.Migrations
                         .HasForeignKey("SaleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("HA.Product.Domain.ProdProduct", b =>
-                {
-                    b.Navigation("SaleProducts");
                 });
 #pragma warning restore 612, 618
         }
