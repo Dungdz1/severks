@@ -274,7 +274,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
             .Where(od => od.OrderId == orderId)
             .ToList();
 
-            // Tính tổng tiền từ các OrderDetail
             return orderDetails.Sum(od => od.TotalAmount);
         }
     }

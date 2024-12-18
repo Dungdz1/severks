@@ -23,5 +23,40 @@ namespace HA.WebAPI.Controllers.Order
             var discount = _discountService.CreateNewDiscount(input);
             return Ok();
         }
+
+        [HttpPut("updatediscount")]
+        public IActionResult UpdateDiscount([FromBody] UpdateDiscountDto input)
+        {
+            try
+            {
+                _discountService.UpdateDiscount(input);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete("DeleteBy{id}")]
+        public IActionResult DeleteDiscount(int id)
+        {
+            _discountService.DeleteDiscount(id);
+            return NoContent();
+        }
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var dis = _discountService.GetAllDiscount();
+            return Ok(dis);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var disc = _discountService.GetDiscountById(id);
+            return Ok(disc);
+        }
     }
 }

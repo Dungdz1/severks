@@ -21,5 +21,40 @@ namespace HA.WebAPI.Controllers.Order
             var discount = _paymentService.CreatePayment(input);
             return Ok();
         }
+
+        [HttpPut("updatepayment")]
+        public IActionResult UpdatePayment([FromBody] UpdatePaymentDto input)
+        {
+            try
+            {
+                _paymentService.UpdatePayment(input);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete("DeleteBy{id}")]
+        public IActionResult DeletePayment(int id)
+        {
+            _paymentService.DeletePayment(id);
+            return NoContent();
+        }
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var pay = _paymentService.GetAllPayment();
+            return Ok(pay);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var pay = _paymentService.GetPaymentById(id);
+            return Ok(pay);
+        }
     }
 }
