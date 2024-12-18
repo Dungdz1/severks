@@ -41,7 +41,7 @@ namespace HA.Shared.ApplicationService
         public DbSet<OdPayment> Payments { get; set; }
         public DbSet<OdOrderPayment> OrderPayments { get; set; }
         public DbSet<OdDelivery> Deliverys { get; set; }
-
+        public DbSet<UserOrder> UserOrders { get; set; }
         public BasethDbContext(DbContextOptions<BasethDbContext> options)
             : base(options) { }
 
@@ -52,6 +52,18 @@ namespace HA.Shared.ApplicationService
                 .HasOne<OdOrder>()
                 .WithMany()
                 .HasForeignKey(e => e.OrderId)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder
+                .Entity<UserOrder>()
+                .HasOne<OdOrder>()
+                .WithMany()
+                .HasForeignKey(e => e.OrderId) 
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder
+                .Entity<UserOrder>()
+                .HasOne<AuthUser>()
+                .WithMany()
+                .HasForeignKey(e => e.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder
@@ -190,12 +202,7 @@ namespace HA.Shared.ApplicationService
             modelBuilder.Entity<OdDetail>()
                 .Property(od => od.TotalAmount)
                 .HasColumnType("decimal(18, 2)");
-            modelBuilder
-                .Entity<OdDetail>()
-                .HasOne<OdOrder>()
-                .WithMany()
-                .HasForeignKey(e => e.OrderId)
-                .OnDelete(DeleteBehavior.Restrict);
+            
             modelBuilder
                 .Entity<OdDetail>()
                 .HasOne<ProdProduct>()
@@ -249,12 +256,6 @@ namespace HA.Shared.ApplicationService
                 .HasForeignKey(e => e.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder
-                .Entity<OdOrder>()
-                .HasOne<AuthUser>()
-                .WithOne()
-                .HasForeignKey<OdOrder>(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

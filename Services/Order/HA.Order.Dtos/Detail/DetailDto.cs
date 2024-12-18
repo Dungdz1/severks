@@ -11,6 +11,5 @@ namespace HA.Order.Dtos.Detail
         public int OrderId { get; set; }
         public List<int> ProductIds { get; set; }
         public List<int> Quantitys { get; set; } 
-        public decimal TotalAmount { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using HA.Order.Dtos.OrderPayment;
 using HA.Order.Infrastructure;
 using HA.Product.Domain;
 using HA.Product.Dtos.ProductModule;
+using HA.Product.Dtos.ProductModule.Brand;
 using HA.Product.Dtos.ProductModule.Cart;
 using HA.Shared.ApplicationService;
 using Microsoft.EntityFrameworkCore;
@@ -46,7 +47,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
             var result = _dbContext.Orders.Select(s => new OrderDto
             {
                 Id = s.Id,
-                UserId = s.UserId,
                 Status = s.Status,
                 OrderDate = s.OrderDate,
             });
@@ -122,7 +122,97 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 _dbContext.SaveChanges();
             }
         }
-        public void AddProductToOrder(DetailDto input)
+        public void AddProductToOrders(DetailDto input)
+        {
+            if (input.ProductIds == null || input.Quantitys == null)
+            {
+                throw new ArgumentException("ProductIds and Quantitys cannot be null.");
+            }
+
+            if (input.ProductIds.Count != input.Quantitys.Count)
+            {
+                throw new ArgumentException("The number of ProductIds must match the number of Quantitys.");
+            }
+
+            for (int i = 0; i < input.ProductIds.Count; i++)
+            {
+                var productId = input.ProductIds[i];
+                var quantity = input.Quantitys[i];
+
+                var product = _dbContext.Products.FirstOrDefault(p => p.Id == productId);
+                if (product == null)
+                {
+                    throw new ArgumentException($"Product with ID {productId} not found.");
+                }
+
+                var productTotal = product.ProdPrice * quantity;
+
+                // Kiểm tra xem sản phẩm đã tồn tại trong OrderDetail chưa
+                var orderDetail = _dbContext.OrderDetails.FirstOrDefault(od =>
+                    od.ProductId == productId && od.OrderId == input.OrderId);
+
+                if (orderDetail != null)
+                {
+                    // Cập nhật Quantity và TotalAmount nếu tồn tại
+                    orderDetail.Quantity += quantity;
+                    orderDetail.TotalAmount += productTotal;
+                }
+                else
+                {
+                    // Thêm mới OrderDetail nếu chưa có
+                    _dbContext.OrderDetails.Add(new OdDetail
+                    {
+                        OrderId = input.OrderId,
+                        ProductId = productId,
+                        Quantity = quantity,
+                        TotalAmount = productTotal
+                    });
+                }
+            }
+
+            // Lưu các thay đổi
+            _dbContext.SaveChanges();
+        }
+
+        public OrderDto CreateNewOrder(CreateOrderDto input)
+        {
+            var orders = new OdOrder
+            {
+                OrderDate = input.OrderDate,
+                Status = input.Status,
+            };
+            _dbContext.Orders.Add(orders);
+            _dbContext.SaveChanges();
+            return new OrderDto
+            {
+                Id = orders.Id,
+                OrderDate = orders.OrderDate,
+                Status = orders.Status,
+            };
+        }
+
+        public void AddOrdertoUser(UserOrderDto input)
+        {
+            foreach (var orderId in input.OrderIds)
+            {
+                var orderFind = _dbContext.UserOrders.FirstOrDefault(s =>
+                s.OrderId == orderId && s.UserId == input.UsertId);
+
+                if (orderFind != null)
+                {
+                    continue;
+                }
+                _dbContext.UserOrders.Add(
+                    new UserOrder
+                    {
+                        OrderId = orderId,
+                        UserId = input.UsertId,
+                    });
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public decimal AddProductToOrder(DetailDto input)
         {
             if (input.ProductIds == null || input.Quantitys == null)
             {
@@ -141,7 +231,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 var productId = input.ProductIds[i];
                 var quantity = input.Quantitys[i];
 
-                // Lấy thông tin sản phẩm từ database
                 var product = _dbContext.Products.FirstOrDefault(p => p.Id == productId);
                 if (product == null)
                 {
@@ -161,7 +250,6 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 }
                 else
                 {
-                    // Thêm mới OrderDetail nếu chưa có
                     _dbContext.OrderDetails.Add(new OdDetail
                     {
                         OrderId = input.OrderId,
@@ -172,44 +260,22 @@ namespace HA.Order.ApplicationService.OrderModule.Implements
                 }
             }
 
-            // Cập nhật tổng tiền cho đơn hàng (nếu cần)
-            var order = _dbContext.OrderDetails.FirstOrDefault(o => o.Id == input.OrderId);
-            if (order != null)
-            {
-                order.TotalAmount += totalAmount;
-            }
+            // Tính lại tổng tiền của đơn hàng
+            var updatedTotalOrderAmount = CalculateOrderTotal(input.OrderId);
 
             _dbContext.SaveChanges();
 
-            // Cập nhật lại TotalAmount trong DTO để trả về
-            input.TotalAmount = totalAmount;
+            return updatedTotalOrderAmount;
         }
-        
 
-
-        public void CreateNewOrder(OrderDto input)
+        public decimal CalculateOrderTotal(int orderId)
         {
-            var existingOrder = _dbContext.Orders
-                .FirstOrDefault(o => o.UserId == input.UserId);
+            var orderDetails = _dbContext.OrderDetails
+            .Where(od => od.OrderId == orderId)
+            .ToList();
 
-            if (existingOrder != null)
-            {
-                // Nếu đã tồn tại, ném ngoại lệ
-                throw new InvalidOperationException($"User với ID {input.UserId} đã có một Order.");
-            }
-
-            // Nếu không tồn tại, tạo mới Order
-            var newOrder = new OdOrder
-            {
-                UserId = input.UserId,
-                OrderDate = input.OrderDate,
-                Status = input.Status
-            };
-
-            // Thêm Order mới vào database
-            _dbContext.Orders.Add(newOrder);
-            _dbContext.SaveChanges();
+            // Tính tổng tiền từ các OrderDetail
+            return orderDetails.Sum(od => od.TotalAmount);
         }
-
     }
 }

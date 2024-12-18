@@ -400,13 +400,7 @@ namespace HA.WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId")
-                        .IsUnique();
 
                     b.ToTable("Orders");
                 });
@@ -486,6 +480,29 @@ namespace HA.WebAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("HA.Order.Domain.UserOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserOrders");
                 });
 
             modelBuilder.Entity("HA.Product.Domain.ProdBrand", b =>
@@ -839,15 +856,6 @@ namespace HA.WebAPI.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("HA.Order.Domain.OdOrder", b =>
-                {
-                    b.HasOne("HA.Auth.Domain.AuthUser", null)
-                        .WithOne()
-                        .HasForeignKey("HA.Order.Domain.OdOrder", "UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("HA.Order.Domain.OdOrderDiscount", b =>
                 {
                     b.HasOne("HA.Order.Domain.OdDiscount", null)
@@ -874,6 +882,21 @@ namespace HA.WebAPI.Migrations
                     b.HasOne("HA.Order.Domain.OdPayment", null)
                         .WithMany()
                         .HasForeignKey("PaymentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("HA.Order.Domain.UserOrder", b =>
+                {
+                    b.HasOne("HA.Order.Domain.OdOrder", null)
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("HA.Auth.Domain.AuthUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });

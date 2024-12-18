@@ -22,7 +22,10 @@ namespace HA.Order.ApplicationService.OrderModule.Abstract
         void AddPaymentToOrder(AddPaymentDto input);
         void AddDiscointToOrder(AddDiscounttoOrder input);
         void AddDelivery(DeliveryDto input);
-        void AddProductToOrder(DetailDto input);
-        void CreateNewOrder(OrderDto input);
+        void AddProductToOrders(DetailDto input);
+        OrderDto CreateNewOrder(CreateOrderDto input);
+        void AddOrdertoUser(UserOrderDto input);
+        decimal AddProductToOrder(DetailDto input);
+        decimal CalculateOrderTotal(int orderId);
     }
 }

@@ -97,44 +97,78 @@ namespace HA.WebAPI.Controllers.Order
                 });
             }
         }
-        [HttpPost]
-        public IActionResult CreateNewOrder([FromBody] OrderDto input)
+        [HttpPost("Create")]
+        public IActionResult CreateNewOrder([FromBody] CreateOrderDto input)
+        {
+            var orders = _orderService.CreateNewOrder(input);
+            return Ok(orders);
+        }
+
+        [HttpPost("AddOrderUser")]
+        public IActionResult AddOrderUser([FromBody] UserOrderDto input)
         {
             try
             {
-                _orderService.CreateNewOrder(input);
-                return Ok(new { Message = "Order đã được tạo thành công.", Order = input });
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { Message = ex.Message });
+                if (input == null || input.OrderIds == null || !input.OrderIds.Any())
+                {
+                    return BadRequest(new { Message = "Invalid input data." });
+                }
+
+                _orderService.AddOrdertoUser(input);
+
+                return Ok(new { Message = "Product brands added successfully." });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Message = "Đã xảy ra lỗi trong quá trình tạo Order.", Details = ex.Message });
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    Message = "An error occurred while adding product brands.",
+                    Error = ex.Message
+                });
             }
         }
 
-        [HttpPost("add_product")]
-        public IActionResult AddtoOrder([FromBody] DetailDto input)
+        [HttpPost("add-products")]
+        public IActionResult AddProductsToOrder([FromBody] DetailDto input)
         {
+            if (input == null)
+            {
+                return BadRequest("Input cannot be null.");
+            }
+
             try
             {
-                if (input == null)
-                {
-                    return BadRequest(new { Message = "Input data is required." });
-                }
+                var totalOrderAmount = _orderService.AddProductToOrder(input);
 
-                _orderService.AddProductToOrder(input);
-                return Ok(new { Message = "Products have been successfully added to the order." });
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(new { Message = ex.Message });
+                return Ok(new
+                {
+                    OrderId = input.OrderId,
+                    TotalOrderAmount = totalOrderAmount,
+                    Message = "Products added and total amount calculated successfully."
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Message = "An error occurred while adding products to the order.", Details = ex.Message });
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("{orderId}/calculate-total")]
+        public IActionResult CalculateOrderTotal(int orderId)
+        {
+            try
+            {
+                var totalOrderAmount = _orderService.CalculateOrderTotal(orderId);
+
+                return Ok(new
+                {
+                    OrderId = orderId,
+                    TotalOrderAmount = totalOrderAmount
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
     }
